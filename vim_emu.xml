@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>VIM Emulation</name>
+    <include path="vim_emu/vim_emu_core.xml"></include>
+    <include path="vim_emu/vim_emu_core_settings.xml"></include>
+  </item>
+</root>
