@@ -91,7 +91,6 @@ There will be pop up like "-- VIM --" during modes other than Insert mode
 are enabled.
 
 ## Available commands at Insert mode
-
 |Key/Commands|Function|
 |:----------:|:-------|
 |ESC/Ctrl-[| Enter Normal mode.|
@@ -101,9 +100,7 @@ In Complement mode, use Ctrl-n/p to choose a candidate,
 Ctrl-h to skip, and ESC/Ctrl-[ to choose a candidate.
 
 ## Available commands at Normal mode
-
 ### Mode Change
-
 |Key/Commands|Function|
 |:----------:|:-------|
 |i/I/a/A/o/O| Enter the insert mode at under the cursor/start of the line/next to the cursor/end of the line/next line/previous line.|
@@ -111,7 +108,6 @@ Ctrl-h to skip, and ESC/Ctrl-[ to choose a candidate.
 |:|Enter the command line mode|
 
 ### Move
-
 |Key/Commands|Function|
 |:----------:|:-------|
 |h/j/k/l|Left/Down/Up/Right.|
@@ -132,7 +128,8 @@ In addition, `Repeat` is also available for some commands.
 |3w| Move 3 words forward|
 
 ### Yank/Cut(Delete)/Change/Paste
-
+|Key/Commands|Function|
+|:----------:|:-------|
 |yy, Y| Copy the line.|
 |dd| Cut the line.|
 |D| Cut from here to the end of the line.|
@@ -146,6 +143,8 @@ y/d/c+Move Command can be used, too.
 e.g.) yw -> copy next one word.
 
 ### Others
+|Key/Commands|Function|
+|:----------:|:-------|
 |u(U)/Ctrl-r| Undo/Redo.|
 |r/R| Replace one character/multi characters.|
 |J| Combine two lines.|
