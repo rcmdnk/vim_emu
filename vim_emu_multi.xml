@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>VIM Emulation</name>
+    <item>
+      <name>All Apps</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>all</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>all</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>All but Terminal (iTerm), Vi, Firefox, Emacs (recommended) </name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>recommend</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue></replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
+          <replacementvalue>TERMINAL, VI, FIREFOX, EMACS</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>TextEdit</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>editor</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>EDITOR</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Xcode</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>xcode</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>XCODE</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Stickies</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>stickies</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>STICKIES</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>mi</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>mi</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>MI</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Mail</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>mail</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>MAIL</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Thunderbird</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>thunderbird</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>THUNDERBIRD</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Outlook</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>outlook</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>OUTLOOK</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Firefox</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>firefox</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>FIREFOX</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Chrome</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>chrome</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>GOOGLE_CHROME</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>OPERA</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>opera</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>OPERA</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Excel</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>excel</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>EXCEL</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>PowerPoint</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>powerpoint</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>POWERPOINT</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+    <item>
+      <name>Word</name>
+      <include path="vim_emu/vim_emu_core.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementvalue>word</replacementvalue>
+        </replacementdef>
+        <replacementdef>
+          <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+          <replacementvalue>WORD</replacementvalue>
+        </replacementdef>
+      </include>
+    </item>
+  </item>
+</root>
