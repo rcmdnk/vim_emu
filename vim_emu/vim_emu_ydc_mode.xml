@@ -6,7 +6,7 @@
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}},
       MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
       KeyCode::E, ModifierFlag::CONTROL_L|ModifierFlag::SHIFT_L,
-      {{VIM_EMU_AFTER}}
+      {{VIM_EMU_AFTER_MOVE}}
     </autogen>
     <!-- Start {{VIM_EMU_YDC_CHAR}} command -->
     <block>
@@ -27,7 +27,7 @@
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
       KeyCode::A, ModifierFlag::CONTROL_L,
       KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L|ModifierFlag::SHIFT_L,
-      {{VIM_EMU_AFTER}},
+      {{VIM_EMU_AFTER_MOVE}},
       KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy,
     </autogen>
     <include path="vim_emu_move.xml">
