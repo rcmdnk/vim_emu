@@ -280,7 +280,7 @@
           <!--Choose applications on which you want to enable vim emulation.-->
         </appendix>
         <appendix>
-          If you want to change applications, add replacement liens for VIM_EMU_ONLY_APPS and VIM_EMU_IGNORE_APPS at the top o of private.xml.
+          If you want to change applications, add replacement lines for VIM_EMU_ONLY_APPS and VIM_EMU_IGNORE_APPS at the top o of private.xml.
 e.  En  able only for MAIL.
         </appendix>
         <appendix>&lt;replacementdef&gt;</appendix>
@@ -336,6 +336,7 @@ e.  En  able only for MAIL.
         </appendix>
         <appendix>Ctrl-u/Ctrl-d: Go Up/Down 10 lines.</appendix>
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>
+        <appendix>Enter: Move to the first non-blanck character of the next line.</appendix>
         <appendix>gg/G: Go to top/bottom of the file.</appendix>
         <appendix></appendix>
         <appendix>In addition, "Repeat" is available for move commands.</appendix>
