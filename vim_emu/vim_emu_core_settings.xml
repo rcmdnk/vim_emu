@@ -159,31 +159,32 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu</identifier>
+      <autogen>__ShowStatusMessage__ -- VIM </autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_normal</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- </autogen>
+      <autogen>__ShowStatusMessage__ -- </autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_visual</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM VISUAL --</autogen>
+      <autogen>__ShowStatusMessage__ VISUAL --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_visual_block</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM VISUAL BLOCK --</autogen>
+      <autogen>__ShowStatusMessage__ VISUAL BLOCK --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_visual_line</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM VISUAL LINE --</autogen>
+      <autogen>__ShowStatusMessage__ VISUAL LINE --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_command</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM COMMAND -- </autogen>
+      <autogen>__ShowStatusMessage__ COMMAND -- </autogen>
     </item>
     <item>
       <name></name>
@@ -197,27 +198,27 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_Y</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- y</autogen>
+      <autogen>__ShowStatusMessage__ y --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_D</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- d</autogen>
+      <autogen>__ShowStatusMessage__ d --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_C</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- c</autogen>
+      <autogen>__ShowStatusMessage__ c --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_R</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- r</autogen>
+      <autogen>__ShowStatusMessage__ r --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_S_R</identifier>
-      <autogen>__ShowStatusMessage__ -- VIM -- R</autogen>
+      <autogen>__ShowStatusMessage__ R --</autogen>
     </item>
     <item>
       <name></name>
@@ -230,6 +231,7 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_search</identifier>
+      <autogen>__ShowStatusMessage__ Search --</autogen>
     </item>
     <item>
       <name></name>
