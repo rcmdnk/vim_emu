@@ -156,4 +156,23 @@
       </replacementvalue>
     </replacementdef>
   </include>
+
+  <!-- Return -->
+  <include path="vim_emu_repeat.xml">
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+      <replacementvalue>
+        KeyCode::RETURN, ModifierFlag::NONE
+      </replacementvalue>
+    </replacementdef>
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+      <replacementvalue>
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::NONE,
+        KeyCode::A, {{VIM_EMU_USE_SHIFT}}ModifierFlag::CONTROL_L,
+        KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+      </replacementvalue>
+    </replacementdef>
+  </include>
 </root>
