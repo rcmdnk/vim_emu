@@ -4,7 +4,7 @@
     <name>VIM Emulation</name>
     <item>
       <name>All Apps</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>all</replacementvalue>
@@ -17,7 +17,7 @@
     </item>
     <item>
       <name>All but Terminal (iTerm), Vi, Firefox, Emacs (recommended) </name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>recommend</replacementvalue>
@@ -34,7 +34,7 @@
     </item>
     <item>
       <name>TextEdit</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>editor</replacementvalue>
@@ -47,7 +47,7 @@
     </item>
     <item>
       <name>Xcode</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>xcode</replacementvalue>
@@ -60,7 +60,7 @@
     </item>
     <item>
       <name>Stickies</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>stickies</replacementvalue>
@@ -73,7 +73,7 @@
     </item>
     <item>
       <name>mi</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>mi</replacementvalue>
@@ -86,7 +86,7 @@
     </item>
     <item>
       <name>Mail</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>mail</replacementvalue>
@@ -99,7 +99,7 @@
     </item>
     <item>
       <name>Thunderbird</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>thunderbird</replacementvalue>
@@ -112,7 +112,7 @@
     </item>
     <item>
       <name>Outlook</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>outlook</replacementvalue>
@@ -125,7 +125,7 @@
     </item>
     <item>
       <name>Firefox</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>firefox</replacementvalue>
@@ -138,7 +138,7 @@
     </item>
     <item>
       <name>Chrome</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>chrome</replacementvalue>
@@ -151,7 +151,7 @@
     </item>
     <item>
       <name>OPERA</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>opera</replacementvalue>
@@ -164,7 +164,7 @@
     </item>
     <item>
       <name>Excel</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>excel</replacementvalue>
@@ -177,7 +177,7 @@
     </item>
     <item>
       <name>PowerPoint</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>powerpoint</replacementvalue>
@@ -190,7 +190,7 @@
     </item>
     <item>
       <name>Word</name>
-      <include path="vim_emu/vim_emu_core.xml">
+      <include path="vim_emu.xml">
         <replacementdef>
           <replacementname>VIM_EMU_APP_NAME</replacementname>
           <replacementvalue>word</replacementvalue>
@@ -202,4 +202,13 @@
       </include>
     </item>
   </item>
+  <include path="vim_emu/vim_emu_core_settings.xml"></include>
+  <replacementdef>
+    <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+    <replacementvalue></replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
+    <replacementvalue>TERMINAL, VI, PASSWORD, FIREFOX, EMACS</replacementvalue>
+  </replacementdef>
 </root>

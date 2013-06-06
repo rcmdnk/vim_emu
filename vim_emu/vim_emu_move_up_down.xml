@@ -145,14 +145,14 @@
     </autogen>
   </block>
 
-  <block> <!-- Command with g -->
+  <block><!-- Command with g -->
     <config_only>notsave.vim_emu_oneshot</config_only>
     <config_only>notsave.vim_emu_G</config_only>
     <autogen> <!-- gg -->
       __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
       KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
+      {{VIM_EMU_RESET_ONESHOT}},
       {{VIM_EMU_AFTER_MOVE}},
-      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_G,
     </autogen>
   </block> <!-- Command with g -->
 </root>
