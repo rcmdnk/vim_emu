@@ -5,13 +5,21 @@ Setting files of KeyRemap4Macbook for VIM Emulation.
 
 ## Install
 
+### Use Beta version of KeyRemap4Macbook (from 8.3.7)
+Now vim_emu was included in Beta version of KeyRemap4MacBook!
+To use Beta version follow [this instruction](https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/image/upgrade-to-the-latest-beta-version.png).
+
+### install vim_emu on current stable KeyRemap4MacBook
+If you don't want to use KeyRemap4MacBook beta version, 
+install vim_emu like this:
+
     git clone git@github.com:rcmdnk/vim_emu.git
     cd vim_emu
     ./install.sh
 
 Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
 
-## Uninstall
+## Uninstall (for using vim_emu.git repository)
 Remove `vim_emu.xml`, `vim_emu` directory in
 `"$HOME/Library/Application Support/KeyRemap4MacBook/`.
 

@@ -163,7 +163,7 @@
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
         </autogen>
       </block>
-    </block> <!--INSERT Mode -->
+    </block> <!-- INSERT Mode -->
 
     <block>
       <config_only>notsave.vim_emu</config_only>
@@ -530,7 +530,7 @@
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
         </autogen>
-      </block> <!--Normal Mode -->
+      </block> <!-- Normal Mode -->
 
       <block> <!-- Visual Mode -->
         <config_only>notsave.vim_emu_visual</config_only>
