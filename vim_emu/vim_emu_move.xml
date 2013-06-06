@@ -73,6 +73,46 @@
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
 
+  <!-- ge/gE-->
+  <block>
+    <config_only>notsave.vim_emu_oneshot</config_only>
+    <config_only>notsave.vim_emu_G</config_only>
+    <include path="vim_emu_repeat.xml">
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+        <replacementvalue>
+          KeyCode::E, ModifierFlag::NONE
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+        <replacementvalue>
+          KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          {{VIM_EMU_RESET_ONESHOT}},
+        </replacementvalue>
+      </replacementdef>
+    </include>
+    <include path="vim_emu_repeat.xml">
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+        <replacementvalue>
+          KeyCode::E, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+        <replacementvalue>
+          KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+          {{VIM_EMU_RESET_ONESHOT}},
+        </replacementvalue>
+      </replacementdef>
+    </include>
+  </block><!-- Command with g -->
+
   <!-- w/W/e/E/b/B -->
   <include path="vim_emu_repeat.xml">
     <replacementdef>
@@ -175,4 +215,6 @@
       </replacementvalue>
     </replacementdef>
   </include>
+
+
 </root>

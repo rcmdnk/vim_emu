@@ -688,6 +688,7 @@
       <!-- Oneshot Mode: force on normal for all other keys  -->
       <block>
         <config_only>notsave.vim_emu_oneshot</config_only>
+        <config_only>notsave.vim_emu_normal</config_only>
         <include path="vim_emu_replace.xml">
           <replacementdef>
             <replacementname>VIM_EMU_REPLACE</replacementname>

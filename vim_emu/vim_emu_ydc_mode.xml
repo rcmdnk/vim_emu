@@ -13,7 +13,6 @@
       <config_not>notsave.vim_emu_{{VIM_EMU_YDC_CHAR}}</config_not>
       <autogen>
         __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_{{VIM_EMU_YDC_CHAR}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
       </autogen>
