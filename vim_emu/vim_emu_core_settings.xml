@@ -78,7 +78,7 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_search</identifier>
-      <autogen>__ShowStatusMessage__ Search --</autogen>
+      <autogen>__ShowStatusMessage__ Search </autogen>
     </item>
     <item>
       <name></name>

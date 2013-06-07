@@ -481,55 +481,6 @@
           KeyCode::DELETE, KeyCode::V, ModifierFlag::COMMAND_L
         </autogen>
 
-        <!-- Repeat -->
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_2,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_3,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_4,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_5,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_6,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_7,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_8,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_9,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
-        </autogen>
       </block> <!-- Normal Mode -->
 
       <block> <!-- Visual Mode -->
@@ -684,6 +635,56 @@
           </replacementdef>
         </include>
       </block>
+
+      <!-- Repeat -->
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_2,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_3,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_4,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_5,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_6,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_7,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_8,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_9,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot
+      </autogen>
 
       <!-- Oneshot Mode: force on normal for all other keys  -->
       <block>
