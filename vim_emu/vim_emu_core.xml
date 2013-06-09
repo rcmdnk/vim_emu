@@ -408,8 +408,9 @@
         <autogen>
           __KeyToKey__ KeyCode::J,
           MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
-          KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L|ModifierFlag::NONE,
+          KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
           KeyCode::SPACE, KeyCode::FORWARD_DELETE, ModifierFlag::SHIFT_L,
+          KeyCode::CURSOR_LEFT,
         </autogen>
 
         <!-- Quit -->
