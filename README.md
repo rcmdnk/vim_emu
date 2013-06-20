@@ -3,7 +3,7 @@ vim_emu
 
 Setting files of KeyRemap4Macbook for VIM Emulation.
 
-## Install
+## Installation
 
 ### Use Beta version of KeyRemap4Macbook (from 8.3.7)
 Now vim_emu was included in Beta version of KeyRemap4MacBook!
