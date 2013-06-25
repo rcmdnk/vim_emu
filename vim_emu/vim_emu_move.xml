@@ -216,5 +216,21 @@
     </replacementdef>
   </include>
 
+  <!-- Space -->
+  <include path="vim_emu_repeat.xml">
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+      <replacementvalue>
+        KeyCode::SPACE, ModifierFlag::NONE
+      </replacementvalue>
+    </replacementdef>
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+      <replacementvalue>
+        KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::NONE,
+      </replacementvalue>
+    </replacementdef>
+  </include>
+
 
 </root>

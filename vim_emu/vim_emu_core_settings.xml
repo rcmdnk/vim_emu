@@ -185,6 +185,8 @@
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>
         <appendix>Enter: Move to the first non-blanck character of the next line.</appendix>
         <appendix>gg/G: Go to top/bottom of the file.</appendix>
+        <appendix>Return: Move to the first non-brank character of the next line.</appendix>
+        <appendix>Space: Move to Right.</appendix>
         <appendix></appendix>
         <appendix>In addition, "Repeat" is available for move commands.</appendix>
         <appendix>e.g.) 4j: Down 4 lines. (only numbers of 2-9)</appendix>
