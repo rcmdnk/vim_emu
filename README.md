@@ -9,13 +9,21 @@ Setting files of KeyRemap4Macbook for VIM Emulation.
 Now vim_emu was included in Beta version of KeyRemap4MacBook!
 To use Beta version follow [this instruction](https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/image/upgrade-to-the-latest-beta-version.png).
 
-### install vim_emu on current stable KeyRemap4MacBook
-If you don't want to use KeyRemap4MacBook beta version, 
-install vim_emu like this:
+### Install the latest vim_emu
+There could be some updates not included in KeyRemap4MacBook, yet.
+If you want to try the latest version, do:
 
     git clone git@github.com:rcmdnk/vim_emu.git
     cd vim_emu
     ./install.sh
+
+If you have KeyRemap4MacBook version in which vim_emu is already installed,
+you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/Resources/checkbox.xml` like:
+
+    <include path="include/checkbox/vi_mode.xml" />
+    <include path="include/checkbox/ubiquitous_vim_bindings.xml" />
+    <!-- <include path="include/checkbox/vim_emu.xml" /> -->
+    <include path="include/checkbox/complete_vi_mode.xml" />
 
 Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
 
@@ -33,12 +41,19 @@ in `"$HOME/Library/Application Support/KeyRemap4MacBook/private.xml`.
 ## Options
 Following checkboxes will appear in your setting panel:
 
-* Escape to enter Normal Mode
-* Ctrl-[ to enter Normal Mode
-* Enable Visual Block Mode
-* Enable Vim Emulation
+* Escape to enter Normal Mode, holding to emulate raw ESC.
+* + Escape to back in Insert Mode
+* Ctrl-[ to enter Normal Mode, holding to emulate raw ESC.
+* + Ctrl-[] to back in Insert Mode
+* Simultaneous jk toggles Normal-Insert Mode.
+* Ctlr-l toggles Normal-Insert Mode.
+* Tap Left Cmd toggles Normal-Insert Mode.
+* Tap Right Cmd toggles Normal-Insert Mode.
+* Enable Visual Block Mode.
+* Enable Vim Emulation.
 
-Enable `Enable Vim Emulation` and at least one of `Escape` or `ctrl-[`.
+Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`, jk,
+Ctrl-l, L-Cmd or R-cmd.
 
 Visual Block uses the mouse cursor position instead of the cursor position
 as a start point,
