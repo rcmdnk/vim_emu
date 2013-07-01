@@ -72,6 +72,13 @@
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
+  <autogen>
+    __KeyToKey__ KeyCode::GERMAN_CIRCUMFLEX, ModifierFlag::NONE,
+    KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
+    KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+    KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+    {{VIM_EMU_AFTER_MOVE}}
+  </autogen>
 
   <!-- ge/gE-->
   <block>
