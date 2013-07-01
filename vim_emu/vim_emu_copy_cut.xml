@@ -84,4 +84,14 @@
     {{VIM_EMU_FORCE_ON_NORMAL_WO_LINE}},
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
   </autogen>
+  <autogen> <!-- * for GERMAN -->
+    __KeyToKey__ KeyCode::BRACKET_RIGHT, {{VIM_EMU_ADDITIONAL_MODIFIER}}
+    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_COPY_CUT}},
+    KeyCode::C, ModifierFlag::COMMAND_L,
+    KeyCode::F, ModifierFlag::COMMAND_L,
+    KeyCode::V, ModifierFlag::COMMAND_L,
+    {{VIM_EMU_FORCE_ON_NORMAL_WO_LINE}},
+    KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
+  </autogen>
 </root>

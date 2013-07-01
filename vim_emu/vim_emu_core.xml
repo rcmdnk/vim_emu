@@ -759,6 +759,13 @@
           {{VIM_EMU_FORCE_OFF_ALL_BUT_LINE}},
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
         </autogen>
+        <autogen> <!-- German keyboards' slash -->
+          __KeyToKey__ KeyCode::KEY_7,
+          MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+          KeyCode::F, ModifierFlag::COMMAND_L,
+          {{VIM_EMU_FORCE_OFF_ALL_BUT_LINE}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
+        </autogen>
         <autogen>
           __KeyToKey__ KeyCode::N, ModifierFlag::NONE,
           KeyCode::G, ModifierFlag::COMMAND_L,
@@ -781,8 +788,19 @@
           KeyCode::RETURN,
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
         </autogen>
-        <autogen>
+        <autogen> <!-- * for JIS -->
           __KeyToKey__ KeyCode::JIS_COLON,
+          MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+          KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L,
+          KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L|ModifierFlag::SHIFT_L,
+          KeyCode::C, ModifierFlag::COMMAND_L,
+          KeyCode::F, ModifierFlag::COMMAND_L,
+          KeyCode::V, ModifierFlag::COMMAND_L,
+          KeyCode::RETURN,
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search,
+        </autogen>
+        <autogen> <!-- * for GERMAN -->
+          __KeyToKey__ KeyCode::BRACKET_RIGHT,
           MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
           KeyCode::CURSOR_LEFT, ModifierFlag::OPTION_L,
           KeyCode::CURSOR_RIGHT, ModifierFlag::OPTION_L|ModifierFlag::SHIFT_L,
