@@ -14,7 +14,7 @@
       </replacementdef>
       <replacementdef>
         <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
-        <replacementvalue>TERMINAL, VI, PASSWORD, FIREFOX, EMACS</replacementvalue>
+        <replacementvalue>TERMINAL, VI, CATHODE, PASSWORD, FIREFOX, EMACS</replacementvalue>
       </replacementdef>
       <replacementdef>
         <replacementname>VIM_EMU_RESET_ONESHOT</replacementname>
