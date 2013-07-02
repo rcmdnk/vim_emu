@@ -1026,15 +1026,24 @@
       <!-- Oneshot Mode: force on normal for all other keys  -->
       <block>
         <config_only>notsave.vim_emu_oneshot</config_only>
-        <config_only>notsave.vim_emu_normal</config_only>
         <include path="vim_emu_replace.xml">
           <replacementdef>
             <replacementname>VIM_EMU_REPLACE</replacementname>
-            <replacementvalue>{{VIM_EMU_FORCE_ON_NORMAL_MODE}}</replacementvalue>
+            <replacementvalue>KeyCode::VK_NONE</replacementvalue>
           </replacementdef>
         </include>
       </block>
+    </block>
+  </item>
 
+  <item>
+    <name>Disable all other non-assigned keys in vim mode</name>
+    <identifier>remap.vim_emu_disable_{{VIM_EMU_APP_NAME}}</identifier>
+    <only>{{VIM_EMU_ONLY_APPS}}</only>
+    <not>{{VIM_EMU_IGNORE_APPS}}</not>
+    <block>
+      <config_only>notsave.vim_emu</config_only>
+      <!-- *************************************** -->
       <!-- Disable all other keys -->
       <include path="vim_emu_replace.xml">
         <replacementdef>
@@ -1043,6 +1052,5 @@
         </replacementdef>
       </include>
     </block>
-
   </item>
 </root>
