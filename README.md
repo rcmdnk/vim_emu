@@ -37,6 +37,8 @@ Remove the line:
 
 in `"$HOME/Library/Application Support/KeyRemap4MacBook/private.xml`.
 
+## Keyboards
+Currently, vim_emu supports US, JIS and German (partly) keyboards.
 
 ## Options
 Following checkboxes will appear in your setting panel:
