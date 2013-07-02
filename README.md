@@ -166,6 +166,7 @@ In addition, `Repeat` is also available for some commands.
 
 y/d/c+Move Command can be used, too.
 e.g.) yw -> copy next one word.
+e.g.) d3w -> delete next 3 words.
 
 ### Others
 |Key/Commands|Function|

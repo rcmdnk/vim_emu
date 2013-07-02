@@ -190,6 +190,7 @@
         <appendix></appendix>
         <appendix>In addition, "Repeat" is available for move commands.</appendix>
         <appendix>e.g.) 4j: Down 4 lines. (only numbers of 2-9)</appendix>
+        <appendix>Repeat is enabled for visual modes, too.</appendix>
 
       </item>
       <item>
@@ -203,8 +204,10 @@
         <appendix>s/S: Delete/Cut a character/a line under the cursor and enter Insert mode.</appendix>
         <appendix>p/P: Paste to the next/current place.</appendix>
         <appendix></appendix>
-        <appendix>y/d/c+Move Command can be used.</appendix>
+        <appendix>y/d/c+Move Command can be used. (now repeat is also available)</appendix>
         <appendix>e.g.) yw -> copy next one word.</appendix>
+        <appendix>e.g.) d3w -> Delete next 3 words.</appendix>
+        <appendix> </appendix>
       </item>
       <item>
         <name>Others</name>

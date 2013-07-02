@@ -400,8 +400,6 @@
     </block>
   </item>
 
-
-
   <item>
     <name>Enable Visual Block Mode</name>
     <appendix>Use with ESC/C-[ above and "Enable Vim Emulation"</appendix>
