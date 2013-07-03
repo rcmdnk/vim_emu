@@ -32,11 +32,14 @@ you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/
 - - -
 
 Abobe work is no longer necessary.
-If you have line:
+If you have line (~ top of the file):
 
     <include path="vim_emu.xml"></include>
 
 in `private.xml`, then please remove the line.
+
+You should have following line at the bottom of file instead:
+    <include path="vim_emu.xml"></include>
 
 Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
 
