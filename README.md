@@ -46,7 +46,7 @@ Following checkboxes will appear in your setting panel:
 * Escape to enter Normal Mode, holding to emulate raw ESC.
 * + Escape to back in Insert Mode
 * Ctrl-[ to enter Normal Mode, holding to emulate raw ESC.
-* + Ctrl-[] to back in Insert Mode
+* + Ctrl-[ to back in Insert Mode
 * Simultaneous jk toggles Normal-Insert Mode.
 * Ctlr-l toggles Normal-Insert Mode.
 * Tap Left Cmd toggles Normal-Insert Mode.
@@ -55,8 +55,8 @@ Following checkboxes will appear in your setting panel:
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 
-Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`, jk,
-Ctrl-l, L-Cmd or R-cmd.
+Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`, `jk`,
+`Ctrl-l`, `L-Cmd` or `R-cmd`.
 
 Visual Block uses the mouse cursor position instead of the cursor position
 as a start point,
@@ -66,9 +66,9 @@ therefore it behaves different from other Visual modes.
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
 Vi (MacVim), Firefox, Emacs, and password dialog.
 
-If you want to change applications, add replacement liens for VIM_EMU_ONLY_APPS (only on which enable) and VIM_EMU_IGNORE_APPS (on which don't enable) at the top of private.xml.
+If you want to change applications, add replacement liens for `VIM_EMU_ONLY_APPS` (only on which enable) and `VIM_EMU_IGNORE_APPS` (on which don't enable) at the top of private.xml.
 
-e.g.) Enable for all but Terminal (iTerm), Vi (MacVim), Firefox, Emacs, and password dialog (default setting).
+e.g.) Enable for all but Terminal (iTerm), Vi (MacVim), Cathode, Firefox, Emacs, and password dialog (default setting).
 
     <replacementdef>
       <replacementname>VIM_EMU_ONLY_APPS</replacementname>
@@ -76,7 +76,7 @@ e.g.) Enable for all but Terminal (iTerm), Vi (MacVim), Firefox, Emacs, and pass
     </replacementdef>
     <replacementdef>
       <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
-      <replacementvalue>TERMINAL, VI, PASSWORD, FIREFOX, EMACS</replacementvalue>
+      <replacementvalue>TERMINAL, VI, CATHODE, PASSWORD, FIREFOX, EMACS</replacementvalue>
     </replacementdef>
 
 e.g.) Enable only for MAIL.
@@ -113,7 +113,7 @@ visual mode, respectively.
 
 After push `:`, a few commands to save/quit are available.
 
-There will be pop up like "-- VIM --" during modes other than Insert mode
+There will be pop up like `-- VIM --` during modes other than Insert mode
 are enabled.
 
 ## Available commands at Insert mode
@@ -123,8 +123,8 @@ are enabled.
 |Simultaneous jk, Ctrl-l, Left-Cmd, Right-Cmd| Can be used for toggling Normal-Insert Modes.|
 |Ctrl-n/p| Enter Complement mode|
 
-In Complement mode, use Ctrl-n/p to choose a candidate,
-Ctrl-h to skip, and ESC/Ctrl-[ to choose a candidate.
+In Complement mode, use `Ctrl-n/p` to choose a candidate,
+`Ctrl-h` to skip, and `ESC/Ctrl-[` to choose a candidate.
 
 ## Available commands at Normal mode
 ### Mode Change
@@ -167,8 +167,8 @@ In addition, `Repeat` is also available for some commands.
 |p/P| Paste to the next/current place. If copy/cut was done with line-wise Visual mode, it pastes to the next/current line. Some commands (such yy/dd) also force to paste as line-wise.|
 
 y/d/c+Move Command can be used, too.
-e.g.) yw -> copy next one word.
-e.g.) d3w -> delete next 3 words.
+* e.g.) `yw` -> copy next one word.
+* e.g.) `d3w` -> delete next 3 words.
 
 ### Others
 |Key/Commands|Function|
@@ -176,7 +176,7 @@ e.g.) d3w -> delete next 3 words.
 |u(U)/Ctrl-r| Undo/Redo.|
 |r/R| Replace one character/multi characters.|
 |J| Combine two lines.|
-|H/L/M: To line from top/bottom/middle of window.|
+|H/L/M| To line from top/bottom/middle of window.|
 |.| It is fixed to do: `Replace a following word with a clipboard` (useful to use with a search).|
 |/| Start search (search box will be opened)|
 |n/N| Search next/previous.|
