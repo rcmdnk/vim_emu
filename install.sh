@@ -1,5 +1,5 @@
 #!/bin/bash
-files=(vim_emu.xml vim_emu)
+files=(vim_emu_test.xml vim_emu.xml vim_emu)
 instdir="$HOME/Library/Application Support/KeyRemap4MacBook"
 
 backup="bak"
@@ -74,9 +74,9 @@ while [ $i -lt ${#files[@]} ];do
   fi
 done
 if [ $dryrun -eq 0 ];then
-  if ! grep -q vim_emu.xml "$instdir/private.xml";then
-    sed -i .$backup 's/<root>/<root>\
-  <include path="vim_emu.xml"><\/include>/' "$instdir/private.xml"
+  if ! grep -q vim_emu_test.xml "$instdir/private.xml";then
+    sed -i .$backup 's/<\/root>/  <include path="vim_emu_test.xml"><\/include>\
+<\/root>/' "$instdir/private.xml"
     echo -n "$instdir/private.xml was updated"
     if [ "$backup" = "" ];then
       rm -f $instdir/private.xml.

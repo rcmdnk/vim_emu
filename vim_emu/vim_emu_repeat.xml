@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <root>
   <block>
-    <config_only>notsave.vim_emu_oneshot</config_only>
+    <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
     <block>
-      <config_only>notsave.vim_emu_repeat</config_only>
+      <config_only>notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}}</config_only>
       <block>
-        <config_only>notsave.vim_emu_2</config_only>
+        <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -14,7 +14,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_3</config_only>
+        <config_only>notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -24,7 +24,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_4</config_only>
+        <config_only>notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -34,7 +34,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_5</config_only>
+        <config_only>notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -45,7 +45,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_6</config_only>
+        <config_only>notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -56,7 +56,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_7</config_only>
+        <config_only>notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -68,7 +68,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_8</config_only>
+        <config_only>notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -80,7 +80,7 @@
         </autogen>
       </block>
       <block>
-        <config_only>notsave.vim_emu_9</config_only>
+        <config_only>notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},

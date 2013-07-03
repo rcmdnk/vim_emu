@@ -82,8 +82,8 @@
 
   <!-- ge/gE-->
   <block>
-    <config_only>notsave.vim_emu_oneshot</config_only>
-    <config_only>notsave.vim_emu_G</config_only>
+    <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
+    <config_only>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_only>
     <include path="vim_emu_repeat.xml">
       <replacementdef>
         <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
