@@ -44,7 +44,7 @@ Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4mac
 Remove `vim_emu_test.xml`, `vim_emu.xml`, `vim_emu` directory in
 `"$HOME/Library/Application Support/KeyRemap4MacBook/`.
 
-Remove the line:
+Remove the line (~at the end of file):
 
     <include path="vim_emu_test.xml"></include>
 
