@@ -53,6 +53,7 @@ Following checkboxes will appear in your setting panel:
 * Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Visual Block Mode.
 * Enable Vim Emulation.
+* Disable all non-assigned keys in other than Insert Mode.
 
 Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`, jk,
 Ctrl-l, L-Cmd or R-cmd.
@@ -118,7 +119,8 @@ are enabled.
 ## Available commands at Insert mode
 |Key/Commands|Function|
 |:----------:|:-------|
-|ESC/Ctrl-[| Enter Normal mode.|
+|ESC/Ctrl-[| Enter Normal mode. Holding these keys emulate normal ESC. In addition, toggle option is available.|
+|Simultaneous jk, Ctrl-l, Left-Cmd, Right-Cmd| Can be used for toggling Normal-Insert Modes.|
 |Ctrl-n/p| Enter Complement mode|
 
 In Complement mode, use Ctrl-n/p to choose a candidate,

@@ -70,51 +70,63 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_line_copy</identifier>
+      <!-- <autogen>__ShowStatusMessage__ lc</autogen> -->
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_complement</identifier>
+      <autogen>__ShowStatusMessage__ COMP --</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_search</identifier>
       <autogen>__ShowStatusMessage__ Search </autogen>
+      <autogen>__ShowStatusMessage__ SEARCH</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_repeat</identifier>
+      <autogen>__ShowStatusMessage__ REPEAT</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_2</identifier>
+      <autogen>__ShowStatusMessage__ 2</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_3</identifier>
+      <autogen>__ShowStatusMessage__ 3</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_4</identifier>
+      <autogen>__ShowStatusMessage__ 4</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_5</identifier>
+      <autogen>__ShowStatusMessage__ 5</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_6</identifier>
+      <autogen>__ShowStatusMessage__ 6</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_7</identifier>
+      <autogen>__ShowStatusMessage__ 7</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_8</identifier>
+      <autogen>__ShowStatusMessage__ 8</autogen>
     </item>
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_9</identifier>
+      <autogen>__ShowStatusMessage__ 9</autogen>
     </item>
   </item>
   <item>
