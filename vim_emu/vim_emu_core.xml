@@ -1035,7 +1035,7 @@
   </item>
 
   <item>
-    <name>Disable all other non-assigned keys in vim mode</name>
+    <name>Disable all other non-assigned keys in other than Inser Mode</name>
     <identifier>remap.vim_emu_disable_{{VIM_EMU_APP_NAME}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
