@@ -4,128 +4,127 @@
   <item hidden="true">
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu</identifier>
+      <identifier vk_config="true">notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ -- VIM </autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_normal</identifier>
+      <identifier vk_config="true">notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ -- </autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_visual</identifier>
+      <identifier vk_config="true">notsave.vim_emu_visual{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ VISUAL --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_visual_block</identifier>
+      <identifier vk_config="true">notsave.vim_emu_visual_block{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ VISUAL BLOCK --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_visual_line</identifier>
+      <identifier vk_config="true">notsave.vim_emu_visual_line{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ VISUAL LINE --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_command</identifier>
+      <identifier vk_config="true">notsave.vim_emu_command{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ COMMAND -- </autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_oneshot</identifier>
+      <identifier vk_config="true">notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ oneshot</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_G</identifier>
+      <identifier vk_config="true">notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ g</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_Y</identifier>
+      <identifier vk_config="true">notsave.vim_emu_Y{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ y --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_D</identifier>
+      <identifier vk_config="true">notsave.vim_emu_D{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ d --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_C</identifier>
+      <identifier vk_config="true">notsave.vim_emu_C{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ c --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_R</identifier>
+      <identifier vk_config="true">notsave.vim_emu_R{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ r --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_S_R</identifier>
+      <identifier vk_config="true">notsave.vim_emu_S_R{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ R --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_line_copy</identifier>
+      <identifier vk_config="true">notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</identifier>
       <!-- <autogen>__ShowStatusMessage__ lc</autogen> -->
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_complement</identifier>
+      <identifier vk_config="true">notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ COMP --</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_search</identifier>
-      <autogen>__ShowStatusMessage__ Search </autogen>
+      <identifier vk_config="true">notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ SEARCH</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_repeat</identifier>
+      <identifier vk_config="true">notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ REPEAT</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_2</identifier>
+      <identifier vk_config="true">notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 2</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_3</identifier>
+      <identifier vk_config="true">notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 3</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_4</identifier>
+      <identifier vk_config="true">notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 4</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_5</identifier>
+      <identifier vk_config="true">notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 5</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_6</identifier>
+      <identifier vk_config="true">notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 6</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_7</identifier>
+      <identifier vk_config="true">notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 7</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_8</identifier>
+      <identifier vk_config="true">notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 8</autogen>
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_9</identifier>
+      <identifier vk_config="true">notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 9</autogen>
     </item>
   </item>

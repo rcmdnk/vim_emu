@@ -5,9 +5,12 @@ Setting files of KeyRemap4Macbook for VIM Emulation.
 
 ## Installation
 
-### Use Beta version of KeyRemap4Macbook (from 8.3.7)
-Now vim_emu was included in Beta version of KeyRemap4MacBook!
-To use Beta version follow [this instruction](https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/image/upgrade-to-the-latest-beta-version.png).
+### Stable version is available in KeyRemap4Macbook as default (from 8.3.7)
+Now vim_emu was included in KeyRemap4MacBook from 8.3.7.
+If you use previous version,
+please update KeyRemap4MacBook or install files directly as below.
+If you are up-to-date at stable release but it is before 8.3.7,
+please try to check Beta version: follow [this instruction](https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/image/upgrade-to-the-latest-beta-version.png).
 
 ### Install the latest vim_emu
 There could be some updates not included in KeyRemap4MacBook, yet.
@@ -17,6 +20,7 @@ If you want to try the latest version, do:
     cd vim_emu
     ./install.sh
 
+<strike>
 If you have KeyRemap4MacBook version in which vim_emu is already installed,
 you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/Resources/checkbox.xml` like:
 
@@ -25,15 +29,24 @@ you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/
     <!-- <include path="include/checkbox/vim_emu.xml" /> -->
     <include path="include/checkbox/complete_vi_mode.xml" />
 
+</strike>
+
+Abobe work is no longer necessary.
+If you have line:
+
+    <include path="vim_emu.xml"></include>
+
+in `private.xml`, then please remove the line.
+
 Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
 
 ## Uninstall (for using vim_emu.git repository)
-Remove `vim_emu.xml`, `vim_emu` directory in
+Remove `vim_emu_test.xml`, `vim_emu.xml`, `vim_emu` directory in
 `"$HOME/Library/Application Support/KeyRemap4MacBook/`.
 
 Remove the line:
 
-    <include path="vim_emu.xml"></include>
+    <include path="vim_emu_test.xml"></include>
 
 in `"$HOME/Library/Application Support/KeyRemap4MacBook/private.xml`.
 
@@ -48,6 +61,8 @@ Following checkboxes will appear in your setting panel:
 * Ctrl-[ to enter Normal Mode, holding to emulate raw ESC.
 * + Ctrl-[ to back in Insert Mode
 * Simultaneous jk toggles Normal-Insert Mode.
+* Simultaneous qw toggles Normal-Insert Mode.
+* Simultaneous sd toggles Normal-Insert Mode.
 * Ctlr-l toggles Normal-Insert Mode.
 * Tap Left Cmd toggles Normal-Insert Mode.
 * Tap Right Cmd toggles Normal-Insert Mode.
@@ -55,8 +70,11 @@ Following checkboxes will appear in your setting panel:
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 
-Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`, `jk`,
+Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`,
 `Ctrl-l`, `L-Cmd` or `R-cmd`.
+
+For simultaneous jk/qw/sd, it works only in Insert/Normal modes.
+Therefore, one of other switch keys above need to leave such Virtual mode.
 
 Visual Block uses the mouse cursor position instead of the cursor position
 as a start point,
@@ -120,7 +138,7 @@ are enabled.
 |Key/Commands|Function|
 |:----------:|:-------|
 |ESC/Ctrl-[| Enter Normal mode. Holding these keys emulate normal ESC. In addition, toggle option is available.|
-|Simultaneous jk, Ctrl-l, Left-Cmd, Right-Cmd| Can be used for toggling Normal-Insert Modes.|
+|Simultaneous jk/qw/sd, Ctrl-l, Left-Cmd, Right-Cmd| Can be used for toggling Normal-Insert Modes.|
 |Ctrl-n/p| Enter Complement mode|
 
 In Complement mode, use `Ctrl-n/p` to choose a candidate,
