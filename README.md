@@ -20,7 +20,7 @@ If you want to try the latest version, do:
     cd vim_emu
     ./install.sh
 
-<strike>
+- - -
 If you have KeyRemap4MacBook version in which vim_emu is already installed,
 you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/Resources/checkbox.xml` like:
 
@@ -29,7 +29,7 @@ you need to comment out vim_emu in `/Applications/KeyRemap4MacBook.app/Contents/
     <!-- <include path="include/checkbox/vim_emu.xml" /> -->
     <include path="include/checkbox/complete_vi_mode.xml" />
 
-</strike>
+- - -
 
 Abobe work is no longer necessary.
 If you have line:
