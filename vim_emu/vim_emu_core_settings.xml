@@ -135,6 +135,9 @@
   </item>
   <item>
     <name>Help</name>
+    <appendix>
+      Check https://github.com/rcmdnk/vim_emu for more details.
+    </appendix>
     <item>
       <name>Application choice</name>
       <item>
