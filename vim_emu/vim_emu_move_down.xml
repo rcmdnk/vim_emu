@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<root>
+  <!-- j -->
+  <include path="vim_emu_repeat.xml">
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+      <replacementvalue>KeyCode::J, ModifierFlag::NONE,</replacementvalue>
+    </replacementdef>
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+      <replacementvalue>
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::NONE,
+      </replacementvalue>
+    </replacementdef>
+  </include>
+  <!-- Ctrl-d -->
+  <include path="vim_emu_repeat.xml">
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+      <replacementvalue>
+        KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+      </replacementvalue>
+    </replacementdef>
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+      <replacementvalue>
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+      </replacementvalue>
+    </replacementdef>
+  </include>
+  <!-- Ctrl-f -->
+  <include path="vim_emu_repeat.xml">
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+      <replacementvalue>
+        KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+      </replacementvalue>
+    </replacementdef>
+    <replacementdef>
+      <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+      <replacementvalue>
+        KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+      </replacementvalue>
+    </replacementdef>
+  </include>
+  <!-- M -->
+  <autogen>
+    __KeyToKey__
+    KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
+    KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+    KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+    {{VIM_EMU_AFTER_MOVE}}
+  </autogen>
+  <!-- G -->
+  <autogen>
+    __KeyToKey__ KeyCode::G,
+    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
+    KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
+    {{VIM_EMU_AFTER_MOVE}}
+  </autogen>
+</root>
