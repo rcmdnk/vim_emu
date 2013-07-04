@@ -1,11 +1,11 @@
 vim_emu
 =======
 
-Setting files of KeyRemap4Macbook for VIM Emulation.
+Setting files of KeyRemap4MacBook for VIM Emulation.
 
 ## Installation
 
-### Stable version is available in KeyRemap4Macbook as default (from 8.3.7)
+### Stable version is available in KeyRemap4MacBook as default (from 8.3.7)
 Now vim_emu was included in KeyRemap4MacBook from 8.3.7.
 If you use previous version,
 please update KeyRemap4MacBook or install files directly as below.
@@ -72,6 +72,7 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Visual Block Mode.
+* Enable Recording Macro.
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
@@ -89,6 +90,8 @@ therefore they are useful if you use ESC/Ctrl-[ as is in Insert/Normal modes.
 Visual Block uses the mouse cursor position instead of the cursor position
 as a start point,
 therefore it behaves different from other Visual modes.
+
+For Recording Macro, you need MadRuby (see below).
 
 ## Applications
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
@@ -231,3 +234,31 @@ y/d/c+Move Command can be used, too.
 |w + q| Save and Quit |
 |q | Quit |
 |h | Open help of the application|
+
+## Recording Macro
+Macro feature is available with additional application.
+In vim_emu, one option with [MadRuby](http://www.wingsforpigs.com/MadRuby/MadRuby.html)
+(Keyboard Macro Recorder, free application)
+is available.
+
+Before enabling Recording Macro in vim_emu,
+please install MadRuby, and set kyboard shortcuts in MadRuby like:
+|Function|Shortcut|
+|----------:|:-------|
+|Start Recording| Ctrl-Shift-Cmd-6|
+|Stop Recording| Ctrl-Shift-Cmd-7|
+|Play Macro| Ctrl-Shift-Cmd-8|
+|Multiple Play Macro| Ctrl-Shift-Cmd-9|
+
+Then, enable Recording Macro in KeyRemap4macbook/vim_emu.
+
+Following commands are available in Normal Mode.
+|Key/Commands|Function|
+|:----------:|:-------|
+|q| Start recording a macro.|
+|q(while recording macro)| Stop recording a macro.|
+|@/1| Execute the macro once.|
+|2| Open multiple macro play dialog.|
+
+Note: If you switch application to what ignoring vim_emu during recording macro,
+you need to stop recording macro by Ctrl-Shift-Cmd-7, using menubar dialog of MadRuby.
