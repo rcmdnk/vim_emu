@@ -141,7 +141,7 @@
       <block> <!-- Normal Mode --> 
         <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
-          __KeyToKey__ KeyCode::BRACKET_LEFT,
+          __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
           MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
           {{VIM_EMU_FORCE_OFF_ALL_BUT_LINE}},
           KeyCode::VK_NONE,
