@@ -8,7 +8,7 @@
     <appendix>one of ChangeKey 1, 3, 4, 6, 10-12</appendix>
     <appendix>to leave such Virtual mode.</appendix>
     <appendix>ChangeKey 3 or 6 are useful if you want to use</appendix>
-    <appendix>ESC/Ctrl-[ as is in modes other than Normal/Insert Mode.</appendix>
+    <appendix>ESC/Ctrl-[ as is in modes other than Insert Mode.</appendix>
   </item>
   <item>
     <name>ChangeKey1: Escape to enter Normal Mode</name>
@@ -110,9 +110,8 @@
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
       </block>
-      <block> <!-- Other than Normal Mode -->
+      <block> <!-- Other than Insert Mode -->
         <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
-        <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
         <autogen>
           __HoldingKeyToKey__ KeyCode::ESCAPE,
           {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
@@ -228,9 +227,8 @@
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
       </block>
-      <block> <!-- Other than Normal Mode -->
+      <block> <!-- Other than Insert Mode -->
         <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
-        <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
         <autogen>
           __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
           MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
