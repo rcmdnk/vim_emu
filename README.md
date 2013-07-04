@@ -59,25 +59,30 @@ Currently, vim_emu supports US, JIS and German (partly) keyboards.
 ## Options
 Following checkboxes will appear in your setting panel:
 
-* Escape to enter Normal Mode, holding to emulate raw ESC.
-* + Escape to back in Insert Mode
-* Ctrl-[ to enter Normal Mode, holding to emulate raw ESC.
-* + Ctrl-[ to back in Insert Mode
-* Simultaneous jk toggles Normal-Insert Mode.
-* Simultaneous qw toggles Normal-Insert Mode.
-* Simultaneous sd toggles Normal-Insert Mode.
-* Ctlr-l toggles Normal-Insert Mode.
-* Tap Left Cmd toggles Normal-Insert Mode.
-* Tap Right Cmd toggles Normal-Insert Mode.
+* ChangeKey1: Escape to enter Normal Mode, holding to emulate raw ESC.
+* ChangeKey2: + Escape to back in Insert Mode
+* ChangeKey3: Escape to back in Normal Mode in other than Inser Mode.
+* ChangeKey4: Ctrl-[ to enter Normal Mode, holding to emulate raw ESC.
+* ChangeKey5: + Ctrl-[ to back in Insert Mode
+* ChangeKey6: Ctrl-[ to back in Normal Mode in other than Inser Mode.
+* ChangeKey7: Simultaneous jk toggles Normal-Insert Mode.
+* ChangeKey8: Simultaneous qw toggles Normal-Insert Mode.
+* ChangeKey9: Simultaneous sd toggles Normal-Insert Mode.
+* ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
+* ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
+* ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Visual Block Mode.
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 
-Enable `Enable Vim Emulation` and at least one of `Escape`, `ctrl-[`,
-`Ctrl-l`, `L-Cmd` or `R-cmd`.
+Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
 For simultaneous jk/qw/sd, it works only in Insert/Normal modes.
-Therefore, one of other switch keys above need to leave such Virtual mode.
+Therefore, at least one of ChangeKey 1, 3, 4, 6, 10-12
+needs to be checked to leave such Virtual mode.
+
+ChangeKey 3 and 6 works only in modes other than Insert/Normal modes,
+therefore they are useful if you use ESC/Ctrl-[ as is in Insert/Normal modes.
 
 Visual Block uses the mouse cursor position instead of the cursor position
 as a start point,
