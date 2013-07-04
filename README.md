@@ -172,7 +172,6 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 |Space| Move to right|
-|M| Move current line to the middle. Need enough lines in above/below.|
 
 In addition, `Repeat` is also available for some commands.
 2-9 can be used as a repeat number.
@@ -204,7 +203,7 @@ y/d/c+Move Command can be used, too.
 |u(U)/Ctrl-r| Undo/Redo.|
 |r/R| Replace one character/multi characters.|
 |J| Combine two lines.|
-|H/L/M| To line from top/bottom/middle of window.|
+|M| Move current line to the middle. Need enough lines in above/below.|
 |.| It is fixed to do: `Replace a following word with a clipboard` (useful to use with a search).|
 |/| Start search (search box will be opened)|
 |n/N| Search next/previous.|

@@ -202,7 +202,6 @@
         <appendix>Enter: Move to the first non-blanck character of the next line.</appendix>
         <appendix>gg/G: Go to top/bottom of the file.</appendix>
         <appendix>Space: Move to Right.</appendix>
-        <appendix>M: Move current line to the middle (need enough lines in above/blow).</appendix>
         <appendix>In addition, "Repeat" is available for move commands.</appendix>
         <appendix>e.g.) 4j: Down 4 lines. (only numbers of 2-9)</appendix>
         <appendix>Repeat is enabled for visual modes, too.</appendix>
@@ -230,7 +229,7 @@
         <appendix>u/C-r: Undo/Redo. U can be used as same as u, too.</appendix>
         <appendix>r/R: Replace one/multi character/s.</appendix>
         <appendix>J: Combine two lines.</appendix>
-        <appendix>H/L/M: To line from top/bottom/middle of window.</appendix>
+        <appendix>M: Move current line to the middle (need enough lines in above/blow).</appendix>
         <appendix>.(period): Replace a following word with a clipboard (different from normal vim).</appendix>
         <appendix>/: Search.</appendix>
         <appendix>n/N: Search next/previous.</appendix>
