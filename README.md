@@ -74,6 +74,8 @@ Following checkboxes will appear in your setting panel:
 * Enable Visual Block Mode.
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
+* Ctrl-[ to Escape for non-vim_emu apps.
+* Ctrl-[ to Escape in Noraml Mode.
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
