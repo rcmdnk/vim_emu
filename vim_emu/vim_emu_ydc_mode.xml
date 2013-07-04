@@ -5,6 +5,7 @@
     <autogen> <!-- Shift-{{VIM_EMU_YDC_CHAR}} -->
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}},
       MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+      {{VIM_EMU_BEFORE_MOVE}},
       KeyCode::E, ModifierFlag::CONTROL_L|ModifierFlag::SHIFT_L,
       {{VIM_EMU_AFTER_MOVE}}
     </autogen>
@@ -24,6 +25,7 @@
     <config_only>notsave.vim_emu_{{VIM_EMU_YDC_CHAR}}{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen> <!-- {{VIM_EMU_YDC_CHAR}}{{VIM_EMU_YDC_CHAR}} -->
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
+      {{VIM_EMU_BEFORE_MOVE}},
       KeyCode::A, ModifierFlag::CONTROL_L,
       KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L|ModifierFlag::SHIFT_L,
       {{VIM_EMU_AFTER_MOVE}},

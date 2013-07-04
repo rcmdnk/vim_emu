@@ -8,6 +8,7 @@
         <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_RESET_ONESHOT}},
           {{VIM_EMU_AFTER_MOVE}}
@@ -17,6 +18,7 @@
         <config_only>notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_RESET_ONESHOT}},
@@ -27,6 +29,7 @@
         <config_only>notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_RESET_ONESHOT}},
@@ -37,6 +40,7 @@
         <config_only>notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}},
@@ -48,6 +52,7 @@
         <config_only>notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -59,6 +64,7 @@
         <config_only>notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -71,6 +77,7 @@
         <config_only>notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -83,6 +90,7 @@
         <config_only>notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+          {{VIM_EMU_BEFORE_MOVE}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
           {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
@@ -96,6 +104,7 @@
 
   <autogen>
     __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+    {{VIM_EMU_BEFORE_MOVE}},
     {{VIM_EMU_REPEAT_OUTPUT}},
     {{VIM_EMU_RESET_ONESHOT}},
     {{VIM_EMU_AFTER_MOVE}}

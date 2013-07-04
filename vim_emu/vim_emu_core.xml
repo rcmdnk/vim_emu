@@ -498,7 +498,7 @@
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block> <!-- INSERT Mode (OS Normal State) -->
       <block>
-        <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
+        <config_not>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_not>
         <!-- Complement Mode -->
         <block>
           <config_only>notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}}</config_only>
@@ -548,6 +548,15 @@
     <block>
       <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
       <!-- *************************************** -->
+      <!-- Start g command -->
+      <block>
+        <config_not>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_not>
+        <autogen>
+          __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
+        </autogen>
+      </block>
       <!-- YANK Mode -->
       <block>
         <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
@@ -675,7 +684,7 @@
           __KeyToKey__ KeyCode::V,
           MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}},
           KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L,
           KeyCode::CURSOR_DOWN, ModifierFlag::SHIFT_L,
         </autogen>
@@ -869,18 +878,133 @@
         <include path="vim_emu_copy_cut.xml"></include>
         <!-- Move -->
         <!-- Fix PageUp/Down -->
-        <autogen>
-          __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-          KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-          KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
-        </autogen>
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+        </include>
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+        </include>
         <include path="vim_emu_move.xml">
           <replacementdef>
             <replacementname>VIM_EMU_USE_SHIFT</replacementname>
             <replacementvalue>ModifierFlag::SHIFT_L|</replacementvalue>
+          </replacementdef>
+        </include>
+      </block> <!-- Visual Mode -->
+      <block> <!-- Visual Line Mode (for first command)-->
+        <config_only>notsave.vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}}</config_only>
+        <!-- Copy and Paste -->
+        <include path="vim_emu_copy_cut.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_LINECOPY</replacementname>
+            <replacementvalue>
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}
+            </replacementvalue>
+          </replacementdef>
+        </include>
+        <!-- Move -->
+        <!-- Fix PageUp/Down -->
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_BEFORE_MOVE</replacementname>
+            <replacementvalue>
+              KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}},
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line{{VIM_EMU_ALTCONFIG}},
+              KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+              KeyCode::CURSOR_RIGHT,
+              KeyCode::CURSOR_UP, |ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+        </include>
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_BEFORE_MOVE</replacementname>
+            <replacementvalue>
+              KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}},
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line{{VIM_EMU_ALTCONFIG}},
+            </replacementvalue>
+          </replacementdef>
+        </include>
+        <autogen>
+          __KeyToKey__
+          KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+          KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
+          KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
+          {{VIM_EMU_AFTER_MOVE}}
+        </autogen>
+        <include path="vim_emu_move_up.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_BEFORE_MOVE</replacementname>
+            <replacementvalue>
+              KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}},
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line{{VIM_EMU_ALTCONFIG}},
+              KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L,
+              KeyCode::CURSOR_RIGHT,
+              KeyCode::CURSOR_UP, |ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_USE_SHIFT</replacementname>
+            <replacementvalue>ModifierFlag::SHIFT_L|</replacementvalue>
+          </replacementdef>
+        </include>
+        <include path="vim_emu_move_down.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_USE_SHIFT</replacementname>
+            <replacementvalue>ModifierFlag::SHIFT_L|</replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_BEFORE_MOVE</replacementname>
+            <replacementvalue>
+              KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}},
+              KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_visual_line{{VIM_EMU_ALTCONFIG}},
+            </replacementvalue>
           </replacementdef>
         </include>
       </block> <!-- Visual Mode -->
@@ -897,15 +1021,48 @@
         </include>
         <!-- Move -->
         <!-- Fix PageUp/Down -->
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+        </include>
+        <include path="vim_emu_repeat.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+            <replacementvalue>
+              KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+            </replacementvalue>
+          </replacementdef>
+          <replacementdef>
+            <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
+            <replacementvalue>
+              KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
+            </replacementvalue>
+          </replacementdef>
+        </include>
         <autogen>
-          __KeyToKey__ KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
-          KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
-        </autogen>
-        <autogen>
-          __KeyToKey__ KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL,
+          __KeyToKey__
+          KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
           KeyCode::PAGEDOWN, ModifierFlag::SHIFT_L,
+          KeyCode::PAGEUP, ModifierFlag::SHIFT_L,
+          {{VIM_EMU_AFTER_MOVE}}
         </autogen>
-        <include path="vim_emu_move_up_down.xml">
+        <include path="vim_emu_move_up.xml">
+          <replacementdef>
+            <replacementname>VIM_EMU_USE_SHIFT</replacementname>
+            <replacementvalue>ModifierFlag::SHIFT_L|</replacementvalue>
+          </replacementdef>
+        </include>
+        <include path="vim_emu_move_down.xml">
           <replacementdef>
             <replacementname>VIM_EMU_USE_SHIFT</replacementname>
             <replacementvalue>ModifierFlag::SHIFT_L|</replacementvalue>

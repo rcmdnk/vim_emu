@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <root>
   <!-- Configuration for Up/Down (inc. j/k) -->
-  <include path="vim_emu_move_up_down.xml"></include>
+  <include path="vim_emu_move_up.xml"></include>
+  <include path="vim_emu_move_down.xml"></include>
 
   <!-- h/l -->
   <include path="vim_emu_repeat.xml">
@@ -32,12 +33,14 @@
   <!-- 0/$ -->
   <autogen>
     __KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
   <autogen>
     __KeyToKey__ KeyCode::KEY_4,
     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
@@ -46,12 +49,14 @@
   <autogen>
     __KeyToKey__ KeyCode::A,
     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::A, {{VIM_EMU_USE_SHIFT}}ModifierFlag::CONTROL_L,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
   <autogen>
     __KeyToKey__ KeyCode::E,
     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::E, {{VIM_EMU_USE_SHIFT}}ModifierFlag::CONTROL_L,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
@@ -60,6 +65,7 @@
   <autogen>
     __KeyToKey__ KeyCode::KEY_6,
     MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
     KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
@@ -67,6 +73,7 @@
   </autogen>
   <autogen>
     __KeyToKey__ KeyCode::JIS_HAT, ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
     KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
@@ -74,6 +81,7 @@
   </autogen>
   <autogen>
     __KeyToKey__ KeyCode::GERMAN_CIRCUMFLEX, ModifierFlag::NONE,
+    {{VIM_EMU_BEFORE_MOVE}},
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
     KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
     KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,

@@ -24,6 +24,11 @@
     </item>
     <item>
       <name></name>
+      <identifier vk_config="true">notsave.vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}}</identifier>
+      <autogen>__ShowStatusMessage__ VISUAL LINE --</autogen>
+    </item>
+    <item>
+      <name></name>
       <identifier vk_config="true">notsave.vim_emu_visual_line{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ VISUAL LINE --</autogen>
     </item>
@@ -157,7 +162,7 @@
       <item>
         <name></name>
         <appendix>Starting from this mode</appendix>
-        <appendix>ESC/Ctrl-[: Enter VIM Normal mode</appendix>
+        <appendix>ESC/Ctrl-[ (or other ChangeKeys): Enter VIM Normal mode</appendix>
         <appendix>Ctrl-n/p: Enter Complement mode:</appendix>
         <appendix>* In Complement mode, use Ctrl-n/p to choose a candidate.</appendix>
         <appendix>* Ctrl-h to skip, ESC/Ctrl-[ to choose a candidate.</appendix>
@@ -196,9 +201,8 @@
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>
         <appendix>Enter: Move to the first non-blanck character of the next line.</appendix>
         <appendix>gg/G: Go to top/bottom of the file.</appendix>
-        <appendix>Return: Move to the first non-brank character of the next line.</appendix>
         <appendix>Space: Move to Right.</appendix>
-        <appendix></appendix>
+        <appendix>M: Move current line to the middle (need enough lines in above/blow).</appendix>
         <appendix>In addition, "Repeat" is available for move commands.</appendix>
         <appendix>e.g.) 4j: Down 4 lines. (only numbers of 2-9)</appendix>
         <appendix>Repeat is enabled for visual modes, too.</appendix>
