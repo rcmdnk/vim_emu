@@ -176,7 +176,6 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-u/Ctrl-d| Go Up/Down 10 line.|
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
-|Space| Move to right|
 
 In addition, `Repeat` is also available for some commands.
 2-9 can be used as a repeat number.
