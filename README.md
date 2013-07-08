@@ -258,8 +258,8 @@ Following commands are available in Normal Mode.
 |:----------:|:-------|
 |q| Start recording a macro.|
 |q(while recording macro)| Stop recording a macro.|
-|@/1| Execute the macro once.|
-|2| Open multiple macro play dialog.|
+|@| Execute the macro once.|
+|n@ (n=2-9)| Execute macro n-times.|
 
 Note: If you switch application to what ignoring vim_emu during recording macro,
 you need to stop recording macro by Ctrl-Shift-Cmd-7, using menubar dialog of MadRuby.
