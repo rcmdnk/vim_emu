@@ -491,8 +491,8 @@
     <name>Enable Recording Macro</name>
     <appendix>q in Normal mode to start recording key inputs.</appendix>
     <appendix>q in Normal mode to stop recording key inputs.</appendix>
-    <appendix>@/1 to execute recorded key inputs.</appendix>
-    <appendix>2 to call multiple play dialog.</appendix>
+    <appendix>@ to execute recorded key inputs.</appendix>
+    <appendix>n@ (n=2-9) to execute recorded key inputs n-times.</appendix>
     <appendix>Need additional application like MadRuby.</appendix>
     <appendix>MadRuby: http://www.wingsforpigs.com/MadRuby/MadRuby.html</appendix>
     <appendix>Set Keyboard Shortcuts like:</appendix>
@@ -523,49 +523,30 @@
         KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_record{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block>
-    <block>
-      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::KEY_2,
-        MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
-        KeyCode::KEY_8, ModifierFlag::CONTROL_L|
-        ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L
-      </autogen>
-    </block>
-    <block> <!-- for JIS -->
-      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::JIS_ATMARK, ModifierFlag::NONE,
-        KeyCode::KEY_8, ModifierFlag::COMMAND_L|
-        ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L
-      </autogen>
-    </block>
-    <block> <!-- for German -->
-      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::Q,
-        MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION|ModifierFlag::NONE,
-        KeyCode::KEY_8, ModifierFlag::COMMAND_L|
-        ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::KEY_1,ModifierFlag::NONE,
-        KeyCode::KEY_8, ModifierFlag::CONTROL_L|
-        ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::KEY_2,ModifierFlag::NONE,
-        KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-        ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
-        {{VIM_EMU_FORCE_OFF_ALL_BUT_LINE}},
-      </autogen>
-    </block>
+    <include path="vim_emu_repeat_macro.xml">
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+        <replacementvalue>
+          KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+        </replacementvalue>
+      </replacementdef>
+    </include>
+    <include path="vim_emu_repeat_macro.xml"><!-- for JIS -->
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+        <replacementvalue>
+          KeyCode::JIS_ATMARK, ModifierFlag::NONE,
+        </replacementvalue>
+      </replacementdef>
+    </include>
+    <include path="vim_emu_repeat_macro.xml"><!-- for German -->
+      <replacementdef>
+        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+        <replacementvalue>
+          KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION|ModifierFlag::NONE,
+        </replacementvalue>
+      </replacementdef>
+    </include>
   </item>
   <item>
     <name>Enable Vim Emulation</name>
