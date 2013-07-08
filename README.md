@@ -242,6 +242,7 @@ is available.
 
 Before enabling Recording Macro in vim_emu,
 please install MadRuby, and set kyboard shortcuts in MadRuby like:
+
 |Function|Shortcut|
 |----------:|:-------|
 |Start Recording| Ctrl-Shift-Cmd-6|
@@ -252,6 +253,7 @@ please install MadRuby, and set kyboard shortcuts in MadRuby like:
 Then, enable Recording Macro in KeyRemap4macbook/vim_emu.
 
 Following commands are available in Normal Mode.
+
 |Key/Commands|Function|
 |:----------:|:-------|
 |q| Start recording a macro.|
