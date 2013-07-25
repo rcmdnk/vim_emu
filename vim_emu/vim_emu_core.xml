@@ -809,12 +809,12 @@
           <config_not>notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</config_not>
           <autogen>
             __KeyToKey__ KeyCode::P, ModifierFlag::NONE,
-            KeyCode::CURSOR_RIGHT, KeyCode::V, ModifierFlag::COMMAND_L
+            KeyCode::CURSOR_RIGHT, KeyCode::V, ModifierFlag::COMMAND_L,KeyCode::CURSOR_LEFT
           </autogen>
           <autogen>
             __KeyToKey__ KeyCode::P,
             MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
-            KeyCode::V, ModifierFlag::COMMAND_L
+            KeyCode::V, ModifierFlag::COMMAND_L,KeyCode::CURSOR_LEFT
           </autogen>
         </block>
         <!-- Undo/Redo -->
