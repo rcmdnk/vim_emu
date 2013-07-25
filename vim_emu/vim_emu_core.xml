@@ -523,30 +523,33 @@
         KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_record{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block>
-    <include path="vim_emu_repeat_macro.xml">
-      <replacementdef>
-        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
-        <replacementvalue>
-          KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
-        </replacementvalue>
-      </replacementdef>
-    </include>
-    <include path="vim_emu_repeat_macro.xml"><!-- for JIS -->
-      <replacementdef>
-        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
-        <replacementvalue>
-          KeyCode::JIS_ATMARK, ModifierFlag::NONE,
-        </replacementvalue>
-      </replacementdef>
-    </include>
-    <include path="vim_emu_repeat_macro.xml"><!-- for German -->
-      <replacementdef>
-        <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
-        <replacementvalue>
-          KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION|ModifierFlag::NONE,
-        </replacementvalue>
-      </replacementdef>
-    </include>
+    <block>
+      <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
+      <include path="vim_emu_repeat_macro.xml">
+        <replacementdef>
+          <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+          <replacementvalue>
+            KeyCode::KEY_2, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+          </replacementvalue>
+        </replacementdef>
+      </include>
+      <include path="vim_emu_repeat_macro.xml"><!-- for JIS -->
+        <replacementdef>
+          <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+          <replacementvalue>
+            KeyCode::JIS_ATMARK, ModifierFlag::NONE,
+          </replacementvalue>
+        </replacementdef>
+      </include>
+      <include path="vim_emu_repeat_macro.xml"><!-- for German -->
+        <replacementdef>
+          <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
+          <replacementvalue>
+            KeyCode::Q, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION|ModifierFlag::NONE,
+          </replacementvalue>
+        </replacementdef>
+      </include>
+    </block>
   </item>
   <item>
     <name>Enable Vim Emulation</name>
@@ -976,7 +979,7 @@
       <block> <!-- Visual Line Mode (for first command)-->
         <config_only>notsave.vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}}</config_only>
         <!-- Move -->
-        <!-- Fix PageUp/Down -->
+        <!-- Fix PageUp -->
         <include path="vim_emu_repeat.xml">
           <replacementdef>
             <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -1185,6 +1188,11 @@
       </block>
       <block> <!-- Replace Mode -->
         <config_only>notsave.vim_emu_S_R{{VIM_EMU_ALTCONFIG}}</config_only>
+        <autogen>
+          __KeyToKey__ KeyCode::H,
+          MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+          KeyCode::Z, ModifierFlag::COMMAND_L,
+        </autogen>
         <include path="vim_emu_key_wrap.xml">
           <replacementdef>
             <replacementname>VIM_EMU_BEFORE</replacementname>
