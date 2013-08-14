@@ -77,6 +77,7 @@ Following checkboxes will appear in your setting panel:
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.
+* Reset vim_emu at non-vim_emu apps.
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
@@ -92,6 +93,18 @@ as a start point,
 therefore it behaves different from other Visual modes.
 
 For Recording Macro, you need MadRuby (see below).
+
+If you check "Reset vim_emu at non-vim_emu apps",
+vim_emu Mode will change to "Insert Mode"
+when you push single key/click at non-vim_emu apps.
+e.g.) If you change vim_emu mode to Normal at TextEdit
+and change the application to Terminal and click or push key,
+vim_emu Mode is changed to "Insert Mode".
+It doesn't affect on Terminal, but just changes the mode for vim_emu apps.
+
+Note: This setting maps all single keys/single clicks (left/middle/right),
+therefore all remaps for single keys/clicks (on non-vim_emu apps) after this setting
+can't be enabled as KeyRemap4MacBook priotize former remaps.
 
 ## Applications
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
