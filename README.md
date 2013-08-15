@@ -78,6 +78,8 @@ Following checkboxes will appear in your setting panel:
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.
 * Reset vim_emu at non-vim_emu apps.
+* Reset vim_emu at left click in any case.
+* Reset vim_emu at Cmd-Tab in any case.
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
@@ -105,6 +107,10 @@ It doesn't affect on Terminal, but just changes the mode for vim_emu apps.
 Note: This setting maps all single keys/single clicks (left/middle/right),
 therefore all remaps for single keys/clicks (on non-vim_emu apps) after this setting
 can't be enabled as KeyRemap4MacBook priotize former remaps.
+
+"Reset vim_emu at left click in any case" and "Reset vim_emu at Cmd-Tab in any case"
+are also similar options, but it reset mode even on vim_emu apps.
+
 
 ## Applications
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
