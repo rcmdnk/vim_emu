@@ -18,22 +18,22 @@
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
       <replacementvalue>
-        KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+        KeyCode::U, VK_CONTROL|ModifierFlag::NONE,
       </replacementvalue>
     </replacementdef>
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
       <replacementvalue>
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
       </replacementvalue>
     </replacementdef>
   </include>
@@ -42,13 +42,13 @@
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
       <replacementvalue>
-        KeyCode::B, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+        KeyCode::B, VK_CONTROL|ModifierFlag::NONE,
       </replacementvalue>
     </replacementdef>
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
       <replacementvalue>
-        KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+        KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
       </replacementvalue>
     </replacementdef>
   </include>
@@ -58,7 +58,7 @@
     <autogen> <!-- gg -->
       __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
       {{VIM_EMU_BEFORE_MOVE}},
-      KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
+      KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_COMMAND,
       {{VIM_EMU_RESET_ONESHOT}},
       {{VIM_EMU_AFTER_MOVE}},
     </autogen>
