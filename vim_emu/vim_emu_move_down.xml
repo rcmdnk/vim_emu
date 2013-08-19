@@ -18,22 +18,22 @@
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
       <replacementvalue>
-        KeyCode::D, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+        KeyCode::D, VK_CONTROL|ModifierFlag::NONE,
       </replacementvalue>
     </replacementdef>
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
       <replacementvalue>
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
-        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::OPTION_L,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
+        KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
       </replacementvalue>
     </replacementdef>
   </include>
@@ -42,31 +42,31 @@
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
       <replacementvalue>
-        KeyCode::F, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL|ModifierFlag::NONE,
+        KeyCode::F, VK_CONTROL|ModifierFlag::NONE,
       </replacementvalue>
     </replacementdef>
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_OUTPUT</replacementname>
       <replacementvalue>
-        KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+        KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
       </replacementvalue>
     </replacementdef>
   </include>
   <!-- M -->
   <autogen>
     __KeyToKey__
-    KeyCode::M, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    KeyCode::M, VK_SHIFT|ModifierFlag::NONE,
     {{VIM_EMU_BEFORE_MOVE}},
-    KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
-    KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|ModifierFlag::OPTION_L,
+    KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
+    KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
   <!-- G -->
   <autogen>
     __KeyToKey__ KeyCode::G,
-    MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+    VK_SHIFT|ModifierFlag::NONE,
     {{VIM_EMU_BEFORE_MOVE}},
-    KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}ModifierFlag::COMMAND_L,
+    KeyCode::CURSOR_DOWN, {{VIM_EMU_USE_SHIFT}}VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
 </root>

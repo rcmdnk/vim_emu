@@ -4,9 +4,9 @@
     <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen> <!-- Shift-{{VIM_EMU_YDC_CHAR}} -->
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}},
-      MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_SHIFT|ModifierFlag::NONE,
+      VK_SHIFT|ModifierFlag::NONE,
       {{VIM_EMU_BEFORE_MOVE}},
-      KeyCode::E, ModifierFlag::CONTROL_L|ModifierFlag::SHIFT_L,
+      KeyCode::E, VK_CONTROL|VK_SHIFT,
       {{VIM_EMU_AFTER_MOVE}}
     </autogen>
     <!-- Start {{VIM_EMU_YDC_CHAR}} command -->
@@ -26,8 +26,8 @@
     <autogen> <!-- {{VIM_EMU_YDC_CHAR}}{{VIM_EMU_YDC_CHAR}} -->
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
       {{VIM_EMU_BEFORE_MOVE}},
-      KeyCode::A, ModifierFlag::CONTROL_L,
-      KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L|ModifierFlag::SHIFT_L,
+      KeyCode::A, VK_CONTROL,
+      KeyCode::CURSOR_RIGHT, VK_COMMAND|VK_SHIFT,
       {{VIM_EMU_AFTER_MOVE}},
       KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     </autogen>
@@ -35,7 +35,7 @@
       <replacementdef>
         <replacementname>VIM_EMU_USE_SHIFT</replacementname>
         <replacementvalue>
-          ModifierFlag::SHIFT_L|
+          VK_SHIFT|
         </replacementvalue>
       </replacementdef>
     </include>

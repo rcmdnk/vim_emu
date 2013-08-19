@@ -129,6 +129,7 @@
           KeyCode::VK_MOUSEKEY_LOCK_BUTTON_ALL_FORCE_OFF,
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_mode_use{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
       <replacementdef>
@@ -164,6 +165,7 @@
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_mode_using{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
       <replacementdef>

@@ -8,8 +8,8 @@
         <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_2, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -19,8 +19,8 @@
         <config_only>notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_3, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -30,8 +30,8 @@
         <config_only>notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_4, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -41,8 +41,8 @@
         <config_only>notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_5, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -52,8 +52,8 @@
         <config_only>notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_6, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -63,8 +63,8 @@
         <config_only>notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_7, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -74,8 +74,8 @@
         <config_only>notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_8, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -85,8 +85,8 @@
         <config_only>notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</config_only>
         <autogen>
           __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-          KeyCode::KEY_9, ModifierFlag::CONTROL_L|
-          ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+          KeyCode::KEY_9, VK_CONTROL|
+          VK_SHIFT|VK_COMMAND,
           KeyCode::VK_WAIT_10MS,
           KeyCode::KEY_9, KeyCode::RETURN,
           {{VIM_EMU_RESET_ONESHOT}},
@@ -96,7 +96,7 @@
   </block>
   <autogen>
     __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-    KeyCode::KEY_8, ModifierFlag::CONTROL_L|
-    ModifierFlag::SHIFT_L|ModifierFlag::COMMAND_L,
+    KeyCode::KEY_8, VK_CONTROL|
+    VK_SHIFT|VK_COMMAND,
   </autogen>
 </root>
