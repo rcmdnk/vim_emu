@@ -264,6 +264,7 @@
           KeyCode::J, KeyCode::K,
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_mode_using{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
     </block>
@@ -282,6 +283,7 @@
           KeyCode::Q, KeyCode::W,
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_mode_using{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
     </block>
@@ -300,6 +302,7 @@
           KeyCode::S, KeyCode::D,
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_mode_using{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
     </block>
