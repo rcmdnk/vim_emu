@@ -71,19 +71,9 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
-* Enable Vim Emulation Basic Move.
-* Enable Vim Complement.
-* Enable Vim Search.
-* Enable Vim Yank/Delete/Change.
-* Enable Vim Paste.
-* Enable Vim Otehr Features.
-* Enable Vim Visual Mode.
-* Enable Vim Visual Block Mode.
-* Enable Vim Command Mode.
-* Enable Vim Replace.
-* Enable Vim Recording Macro.
-* Enable Vim Repeat.
-* Disable all non-assigned keys at Oneshot Mode (g/repeat).
+* Enable Visual Block Mode.
+* Enable Recording Macro.
+* Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.
@@ -91,7 +81,7 @@ Following checkboxes will appear in your setting panel:
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
 
-Enable `Enable Vim Basic Move` (Normal Mode) and at least one of ChangeKeys.
+Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
 For simultaneous jk/qw/sd, it works only in Insert/Normal modes.
 Therefore, at least one of ChangeKey 1, 3, 4, 6, 10-12
@@ -117,8 +107,6 @@ It doesn't affect on Terminal, but just changes the mode for vim_emu apps.
 "Reset vim_emu at left click in any case" and "Reset vim_emu at Cmd-Tab in any case"
 are also similar options, but it reset mode even on vim_emu apps.
 
-
-Note: You can enable all vim features, but it may make your key input/mouse move slow. Such Yank/Delete/Change Mode is especially heavy. (To do: make it light...)
 
 ## Applications
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
