@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <root>
+  <!--
   <block>
     <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
     <block>
@@ -101,6 +102,7 @@
       </block>
     </block>
   </block>
+  -->
 
   <autogen>
     __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
