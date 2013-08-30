@@ -10,6 +10,13 @@
     <appendix>ChangeKey 3 or 6 are useful if you want to use</appendix>
     <appendix>ESC/Ctrl-[ as is in modes other than Insert Mode.</appendix>
     <appendix></appendix>
+    <appendix>Currently, all {count} operator is disabled (such 3w to move 3 words).</appendix>
+    <appendix>This feature makes too many remaps (9 times for most of moving),</appendix>
+    <appendix>and even the mouse moving is affected if you enable these feature.</appendix>
+    <appendix>(It makes the response too slow.)</appendix>
+    <appendix>If you would try this feature,</appendix>
+    <appendix>please remove comment out line in vim_emu/vim_emu_repeat.xml.</appendix>
+    <appendix></appendix>
     <appendix>Only APPs {{VIM_EMU_ONLY_APPS}} </appendix>
     <appendix>Ignore APPs {{VIM_EMU_IGNORE_APPS}}</appendix>
   </item>
