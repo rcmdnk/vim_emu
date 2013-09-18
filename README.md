@@ -290,3 +290,7 @@ Following commands are available in Normal Mode.
 
 Note: If you switch application to what ignoring vim_emu during recording macro,
 you need to stop recording macro by Ctrl-Shift-Cmd-7, using menubar dialog of MadRuby.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/rcmdnk/vim_emu/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
