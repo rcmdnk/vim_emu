@@ -71,8 +71,9 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
-* Enable Visual Block Mode.
-* Enable Recording Macro.
+* Enable Vim Visual Block Mode.
+* Enable Vim Recording Macro.
+* Enable Vim Repeat (Currently comented out).
 * Enable Vim Emulation.
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
@@ -192,8 +193,12 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
+<strike>
 In addition, `Repeat` is also available for some commands.
 2-9 can be used as a repeat number.
+</strike>
+
+Currently `Repeaat` feature is commented out.
 
 |Example Commands|Action|
 |:----------:|:-------|
@@ -214,7 +219,9 @@ In addition, `Repeat` is also available for some commands.
 
 y/d/c+Move Command can be used, too.
 * e.g.) `yw` -> copy next one word.
-* e.g.) `d3w` -> delete next 3 words.
+* <!-- e.g.) `d3w` -> delete next 3 words. -->
+
+Currently `Repeaat` feature is commented out.
 
 ### Others
 |Key/Commands|Function|
