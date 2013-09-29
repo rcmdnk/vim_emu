@@ -1324,7 +1324,6 @@
       </include>
     </block>
   </item>
-  <!--
   <item>
     <name>Enable Vim Repeat</name>
     <identifier>remap.vim_emu_repeat{{VIM_EMU_APP_NAME}}</identifier>
@@ -1332,6 +1331,7 @@
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block>
       <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
+      <!-- Repeat -->
       <autogen>
         __KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
@@ -1382,7 +1382,6 @@
       </autogen>
     </block>
   </item>
-  -->
   <item>
     <name>Disable all on-assigned keys at oneshot mode (g/repeat)</name>
     <identifier>remap.vim_emu_disable_oneshot{{VIM_EMU_APP_NAME}}</identifier>

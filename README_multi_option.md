@@ -82,7 +82,7 @@ Following checkboxes will appear in your setting panel:
 * Enable Vim Command Mode.
 * Enable Vim Replace.
 * Enable Vim Recording Macro.
-* Enable Vim Repeat (Currently comented out).
+* Enable Vim Repeat.
 * Disable all non-assigned keys at Oneshot Mode (g/repeat).
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
@@ -204,12 +204,8 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
-<strike>
 In addition, `Repeat` is also available for some commands.
 2-9 can be used as a repeat number.
-</strike>
-
-Currently `Repeaat` feature is commented out.
 
 |Example Commands|Action|
 |:----------:|:-------|
@@ -230,9 +226,7 @@ Currently `Repeaat` feature is commented out.
 
 y/d/c+Move Command can be used, too.
 * e.g.) `yw` -> copy next one word.
-* <!-- e.g.) `d3w` -> delete next 3 words. -->
-
-Currently `Repeaat` feature is commented out.
+* e.g.) `d3w` -> delete next 3 words.
 
 ### Others
 |Key/Commands|Function|
