@@ -59,15 +59,14 @@
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
       </block>
-      <block> <!-- Other than Normal Mode -->
-        <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
-        <autogen>
-          __HoldingKeyToKey__ KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
-          KeyCode::VK_NONE,
-          KeyCode::ESCAPE, Option::NOREPEAT
-        </autogen>
-      </block>
+      <!-- Others -->
+      <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
+      <autogen>
+        __HoldingKeyToKey__ KeyCode::ESCAPE,
+        {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+        KeyCode::VK_NONE,
+        KeyCode::ESCAPE, Option::NOREPEAT
+      </autogen>
     </block>
   </item>
   <item>
@@ -173,16 +172,14 @@
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
       </block>
-      <block> <!-- Other than Normal Mode -->
-        <config_not>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_not>
-        <autogen>
-          __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
-          VK_CONTROL,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
-          KeyCode::VK_NONE,
-          KeyCode::ESCAPE, Option::NOREPEAT
-        </autogen>
-      </block>
+      <!-- Others -->
+      <autogen>
+        __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
+        VK_CONTROL,
+        {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+        KeyCode::VK_NONE,
+        KeyCode::ESCAPE, Option::NOREPEAT
+      </autogen>
     </block>
   </item>
   <item>
