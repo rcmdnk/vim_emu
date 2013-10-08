@@ -21,6 +21,10 @@
         <replacementvalue>
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_Y{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_D{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_C{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_R{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
