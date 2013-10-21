@@ -161,10 +161,6 @@
         <replacementvalue></replacementvalue>
       </replacementdef>
       <replacementdef>
-        <replacementname>VIM_EMU_APP_NAME</replacementname>
-        <replacementvalue></replacementvalue>
-      </replacementdef>
-      <replacementdef>
         <replacementname>VIM_EMU_BEFORE_COPY_CUT</replacementname>
         <replacementvalue></replacementvalue>
       </replacementdef>

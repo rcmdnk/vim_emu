@@ -6,11 +6,7 @@
       <name>All Apps</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
-          <replacementvalue>all</replacementvalue>
-        </replacementdef>
-        <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>all</replacementvalue>
         </replacementdef>
       </include>
@@ -19,7 +15,7 @@
       <name>All but Terminal (iTerm), Vi, Firefox, Emacs (recommended) </name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>recommend</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -36,7 +32,7 @@
       <name>TextEdit</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>editor</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -49,7 +45,7 @@
       <name>Xcode</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>xcode</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -62,7 +58,7 @@
       <name>Stickies</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>stickies</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -75,7 +71,7 @@
       <name>mi</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>mi</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -88,7 +84,7 @@
       <name>Mail</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>mail</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -101,7 +97,7 @@
       <name>Thunderbird</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>thunderbird</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -114,7 +110,7 @@
       <name>Outlook</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>outlook</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -127,7 +123,7 @@
       <name>Firefox</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>firefox</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -140,7 +136,7 @@
       <name>Chrome</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>chrome</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -153,7 +149,7 @@
       <name>OPERA</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>opera</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -166,7 +162,7 @@
       <name>Excel</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>excel</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -179,7 +175,7 @@
       <name>PowerPoint</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>powerpoint</replacementvalue>
         </replacementdef>
         <replacementdef>
@@ -192,7 +188,7 @@
       <name>Word</name>
       <include path="vim_emu.xml">
         <replacementdef>
-          <replacementname>VIM_EMU_APP_NAME</replacementname>
+          <replacementname>VIM_EMU_ALTCONFIG</replacementname>
           <replacementvalue>word</replacementvalue>
         </replacementdef>
         <replacementdef>

@@ -209,14 +209,6 @@
         <replacementvalue></replacementvalue>
       </replacementdef>
       <replacementdef>
-        <replacementname>VIM_EMU_ALTCONFIG</replacementname>
-        <replacementvalue>{{VIM_EMU_ALTCONFIG}}</replacementvalue>
-      </replacementdef>
-      <replacementdef>
-        <replacementname>VIM_EMU_APP_NAME</replacementname>
-        <replacementvalue>{{VIM_EMU_ALTCONFIG}}</replacementvalue>
-      </replacementdef>
-      <replacementdef>
         <replacementname>VIM_EMU_BEFORE_COPY_CUT</replacementname>
         <replacementvalue></replacementvalue>
       </replacementdef>
@@ -233,11 +225,6 @@
         <replacementvalue></replacementvalue>
       </replacementdef>
     </include>
-    <include path="vim_emu/vim_emu_core_settings.xml">
-      <replacementdef>
-        <replacementname>VIM_EMU_ALTCONFIG</replacementname>
-        <replacementvalue>{{VIM_EMU_ALTCONFIG}}</replacementvalue>
-      </replacementdef>
-    </include>
+    <include path="vim_emu/vim_emu_core_settings.xml"></include>
   </item>
 </root>
