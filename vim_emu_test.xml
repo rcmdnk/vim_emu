@@ -1,9 +1,8 @@
 <?xml version="1.0"?>
 <root>
-  <include path="vim_emu.xml">
-    <replacementdef>
-      <replacementname>VIM_EMU_ALTCONFIG</replacementname>
-      <replacementvalue>TEST</replacementvalue>
-    </replacementdef>
-  </include>
+  <replacementdef>
+    <replacementname>VIM_EMU_ALTCONFIG</replacementname>
+    <replacementvalue>TEST</replacementvalue>
+  </replacementdef>
+  <include path="vim_emu.xml"></include>
 </root>
