@@ -479,7 +479,7 @@
   </item>
   <item>
     <name>Enable Vim Complement</name>
-    <identifier>remap.vim_emu_complemen{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_complement{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block> <!-- INSERT Mode (OS Normal State) -->
@@ -524,7 +524,7 @@
   </item>
   <item>
     <name>Enable Vim Search</name>
-    <identifier>remap.vim_emu_searc{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_search{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block> <!-- INSERT Mode (OS Normal State) -->
@@ -606,7 +606,7 @@
   </item>
   <item>
     <name>Enable Vim Yank/Delete/Change</name>
-    <identifier>remap.vim_emu_yd{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_ydc{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block>
@@ -718,7 +718,7 @@
   </item>
   <item>
     <name>Enable Vim Paste</name>
-    <identifier>remap.vim_emu_past{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_paste{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block>
@@ -759,7 +759,7 @@
   </item>
   <item>
     <name>Enable Vim Other Features</name>
-    <identifier>remap.vim_emu_other{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_others{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block>
@@ -799,7 +799,7 @@
   </item>
   <item>
     <name>Enable Vim Visual Mode</name>
-    <identifier>remap.vim_emu_visua{{VIM_EMU_ALTCONFIG}}</identifier>
+    <identifier>remap.vim_emu_visual{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
     <block>
