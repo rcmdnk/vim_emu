@@ -71,19 +71,10 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
-* Enable Vim Complement.
-* Enable Vim Search.
-* Enable Vim Yank/Delete/Change.
-* Enable Vim Paste.
-* Enable Vim Otehr Features.
-* Enable Vim Visual Mode.
+* Enable Vim Emulation Basic Move.
 * Enable Vim Visual Block Mode.
-* Enable Vim Command Mode.
-* Enable Vim Replace.
 * Enable Vim Recording Macro.
 * Enable Vim Repeat (Currently comented out).
-* Enable Vim Emulation Basic Move.
-* Disable all non-assigned keys at Oneshot Mode (g/repeat).
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.

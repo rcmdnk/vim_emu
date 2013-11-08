@@ -15,13 +15,11 @@
       <autogen>
         __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_{{VIM_EMU_YDC_CHAR}}{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
     </block>
   </block>
 
   <block> <!-- {{VIM_EMU_YDC_CHAR}} MODE -->
-    <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
     <config_only>notsave.vim_emu_{{VIM_EMU_YDC_CHAR}}{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen> <!-- {{VIM_EMU_YDC_CHAR}}{{VIM_EMU_YDC_CHAR}} -->
       __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
