@@ -53,13 +53,12 @@
     </replacementdef>
   </include>
   <block><!-- Command with g -->
-    <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
     <config_only>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen> <!-- gg -->
       __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
       {{VIM_EMU_BEFORE_MOVE}},
       KeyCode::CURSOR_UP, {{VIM_EMU_USE_SHIFT}}VK_COMMAND,
-      {{VIM_EMU_RESET_ONESHOT}},
+       KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
       {{VIM_EMU_AFTER_MOVE}},
     </autogen>
   </block> <!-- Command with g -->

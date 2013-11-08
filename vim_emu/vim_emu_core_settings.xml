@@ -39,11 +39,6 @@
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ oneshot</autogen>
-    </item>
-    <item>
-      <name></name>
       <identifier vk_config="true">notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ g</autogen>
     </item>

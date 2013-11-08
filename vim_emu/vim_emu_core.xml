@@ -503,7 +503,6 @@
       </autogen>
       <!-- Insert Mode: Complement End -->
     </block> <!-- Insert Mode End -->
-
     <block> <!-- Complement Mode Begin -->
       <config_only>notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}}</config_only>
       <autogen>
@@ -534,23 +533,23 @@
       </autogen>
     </block> <!-- Search End -->
 
+    <!-- Normal Mode: Enter G Mode Begin -->
+    <block>
+      <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
+      <config_not>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_not>
+      <autogen>
+        __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+    </block>
+    <!-- Normal Mode: G Mode End -->
+
     <block> <!-- Normal Mode Begin -->
       <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
 
       <!-- Normal Mode: Cursor Move Begin -->
       <include path="vim_emu_move.xml"></include>
       <!-- Normal Mode: Cursor Move End -->
-
-      <!-- Normal Mode: G Mode Begin -->
-      <block>
-        <config_not>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_not>
-        <autogen>
-          __KeyToKey__ KeyCode::G, ModifierFlag::NONE,
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
-        </autogen>
-      </block>
-      <!-- Normal Mode: G Mode End -->
 
       <!-- Normal Mode: Enter INSERT Mode, i/I/a/A/o/O -->
       <autogen>
@@ -753,35 +752,35 @@
       </autogen>
       <!-- Normal Mode: Cut One Character End -->
 
-      <!-- Normal Mode: Paste Line Begin -->
-      <config_only>notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::P, ModifierFlag::NONE,
-        KeyCode::CURSOR_LEFT, VK_COMMAND,
-        KeyCode::CURSOR_DOWN,
-        KeyCode::V, VK_COMMAND,
-        KeyCode::RETURN, KeyCode::CURSOR_UP,
-      </autogen>
-      <autogen>
-        __KeyToKey__ KeyCode::P, VK_SHIFT,
-        KeyCode::CURSOR_LEFT, VK_COMMAND,
-        KeyCode::V, VK_COMMAND,
-        KeyCode::RETURN, KeyCode::CURSOR_UP,
-      </autogen>
-      <!-- Normal Mode: Paste Line End -->
+      <block> <!-- Normal Mode: Paste Line Begin -->
+        <config_only>notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</config_only>
+        <autogen>
+          __KeyToKey__ KeyCode::P, ModifierFlag::NONE,
+          KeyCode::CURSOR_LEFT, VK_COMMAND,
+          KeyCode::CURSOR_DOWN,
+          KeyCode::V, VK_COMMAND,
+          KeyCode::RETURN, KeyCode::CURSOR_UP,
+        </autogen>
+        <autogen>
+          __KeyToKey__ KeyCode::P, VK_SHIFT,
+          KeyCode::CURSOR_LEFT, VK_COMMAND,
+          KeyCode::V, VK_COMMAND,
+          KeyCode::RETURN, KeyCode::CURSOR_UP,
+        </autogen>
+      </block> <!-- Normal Mode: Paste Line End -->
 
-      <!-- Normal Mode: Paste Word Begin -->
-      <config_not>notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</config_not>
-      <autogen>
-        __KeyToKey__ KeyCode::P, ModifierFlag::NONE,
-        KeyCode::CURSOR_RIGHT, KeyCode::V, VK_COMMAND,KeyCode::CURSOR_LEFT
-      </autogen>
-      <autogen>
-        __KeyToKey__ KeyCode::P,
-        VK_SHIFT|ModifierFlag::NONE,
-        KeyCode::V, VK_COMMAND,KeyCode::CURSOR_LEFT
-      </autogen>
-      <!-- Normal Mode: Paste Word End -->
+      <block> <!-- Normal Mode: Paste Word Begin -->
+        <config_not>notsave.vim_emu_line_copy{{VIM_EMU_ALTCONFIG}}</config_not>
+        <autogen>
+          __KeyToKey__ KeyCode::P, ModifierFlag::NONE,
+          KeyCode::CURSOR_RIGHT, KeyCode::V, VK_COMMAND,KeyCode::CURSOR_LEFT
+        </autogen>
+        <autogen>
+          __KeyToKey__ KeyCode::P,
+          VK_SHIFT|ModifierFlag::NONE,
+          KeyCode::V, VK_COMMAND,KeyCode::CURSOR_LEFT
+        </autogen>
+      </block> <!-- Normal Mode: Paste Word End -->
 
       <!-- Normal Mode: Undo/Redo Begin -->
       <autogen> __KeyToKey__ KeyCode::U, ModifierFlag::NONE,
@@ -1292,73 +1291,46 @@
         __KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_5{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_6{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}
       </autogen>
     </block>
   </item>
   -->
 
-  <item>
-    <name>Disable all on-assigned keys at oneshot mode (g/repeat)</name>
-    <identifier>remap.vim_emu_disable_oneshot{{VIM_EMU_ALTCONFIG}}</identifier>
-    <only>{{VIM_EMU_ONLY_APPS}}</only>
-    <not>{{VIM_EMU_IGNORE_APPS}}</not>
-    <block>
-      <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
-      <!-- Oneshot Mode: force on normal for all other keys  -->
-      <block>
-        <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
-        <include path="vim_emu_replace.xml">
-          <replacementdef>
-            <replacementname>VIM_EMU_REPLACE</replacementname>
-            <replacementvalue>KeyCode::VK_NONE</replacementvalue>
-          </replacementdef>
-        </include>
-      </block>
-    </block>
-  </item>
   <item>
     <name>Disable all other non-assigned keys in other than Inser Mode</name>
     <identifier>remap.vim_emu_disable{{VIM_EMU_ALTCONFIG}}</identifier>

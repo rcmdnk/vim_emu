@@ -90,7 +90,6 @@
 
   <!-- ge/gE-->
   <block>
-    <config_only>notsave.vim_emu_oneshot{{VIM_EMU_ALTCONFIG}}</config_only>
     <config_only>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_only>
     <include path="vim_emu_repeat.xml">
       <replacementdef>
@@ -105,7 +104,13 @@
           KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
           KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
           KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
-          {{VIM_EMU_RESET_ONESHOT}},
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
+        <replacementname>VIM_EMU_AFTER_MOVE</replacementname>
+        <replacementvalue>
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_AFTER_MOVE}}
         </replacementvalue>
       </replacementdef>
     </include>
@@ -122,7 +127,13 @@
           KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
           KeyCode::CURSOR_LEFT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
           KeyCode::CURSOR_RIGHT, {{VIM_EMU_USE_SHIFT}}VK_OPTION,
-          {{VIM_EMU_RESET_ONESHOT}},
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
+        <replacementname>VIM_EMU_AFTER_MOVE</replacementname>
+        <replacementvalue>
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_AFTER_MOVE}}
         </replacementvalue>
       </replacementdef>
     </include>
