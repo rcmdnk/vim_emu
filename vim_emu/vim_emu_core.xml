@@ -533,7 +533,7 @@
       </autogen>
     </block> <!-- Search End -->
 
-    <!-- Normal Mode: Enter G Mode Begin -->
+    <!-- Enter G Mode Begin -->
     <block>
       <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
       <config_not>notsave.vim_emu_G{{VIM_EMU_ALTCONFIG}}</config_not>
@@ -542,10 +542,13 @@
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_G{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block>
-    <!-- Normal Mode: G Mode End -->
+    <!-- Enter G Mode End -->
 
     <block> <!-- Normal Mode Begin -->
       <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
+      <config_not>notsave.vim_emu_Y{{VIM_EMU_ALTCONFIG}}</config_not>
+      <config_not>notsave.vim_emu_D{{VIM_EMU_ALTCONFIG}}</config_not>
+      <config_not>notsave.vim_emu_C{{VIM_EMU_ALTCONFIG}}</config_not>
 
       <!-- Normal Mode: Cursor Move Begin -->
       <include path="vim_emu_move.xml"></include>
@@ -842,7 +845,8 @@
         <replacementname>VIM_EMU_AFTER_MOVE</replacementname>
         <replacementvalue>
           KeyCode::C, VK_COMMAND,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_Y{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
     </include>
@@ -857,7 +861,8 @@
         KeyCode::E, VK_CONTROL|VK_SHIFT,
         KeyCode::X, VK_COMMAND,
         KeyCode::FORWARD_DELETE,
-        {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_D{{VIM_EMU_ALTCONFIG}},
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block>
@@ -870,7 +875,8 @@
         <replacementname>VIM_EMU_AFTER_MOVE</replacementname>
         <replacementvalue>
           KeyCode::X, VK_COMMAND,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_D{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
     </include>
@@ -883,7 +889,8 @@
         __KeyToKey__ KeyCode::W, ModifierFlag::NONE,
         KeyCode::CURSOR_RIGHT, VK_SHIFT|VK_OPTION,
         KeyCode::X, VK_COMMAND,
-        {{VIM_EMU_FORCE_OFF_ALL_MODE}},
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_C{{VIM_EMU_ALTCONFIG}},
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block>
     <include path="vim_emu_ydc_mode.xml">
@@ -895,7 +902,8 @@
         <replacementname>VIM_EMU_AFTER_MOVE</replacementname>
         <replacementvalue>
           KeyCode::X, VK_COMMAND,
-          {{VIM_EMU_FORCE_OFF_ALL_MODE}}
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_C{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
     </include>
