@@ -71,7 +71,7 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
-* Enable Vim Emulation Basic Move.
+* Enable Vim Emulation.
 * Enable Vim Visual Block Mode.
 * Enable Vim Recording Macro.
 * Enable Vim Repeat (Currently comented out).
@@ -82,7 +82,7 @@ Following checkboxes will appear in your setting panel:
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
 
-Enable `Enable Vim Basic Move` (Normal Mode) and at least one of ChangeKeys.
+Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
 For simultaneous jk/qw/sd, it works only in Insert/Normal modes.
 Therefore, at least one of ChangeKey 1, 3, 4, 6, 10-12
