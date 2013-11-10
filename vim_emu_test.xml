@@ -1,8 +1,21 @@
 <?xml version="1.0"?>
 <root>
+  <appdef>
+    <appname>LOGMEIN</appname>
+    <equal>com.logmein.logmeinpluginhost</equal>
+  </appdef>
+
   <replacementdef>
     <replacementname>VIM_EMU_ALTCONFIG</replacementname>
     <replacementvalue>TEST</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
+    <replacementvalue>TERMINAL, VI, CATHODE, PASSWORD, FIREFOX, EMACS, LOGMEIN</replacementvalue>
+  </replacementdef>
+  <replacementdef>
+    <replacementname>VIM_EMU_ONLY_APPS</replacementname>
+    <replacementvalue></replacementvalue>
   </replacementdef>
   <include path="vim_emu.xml"></include>
 </root>

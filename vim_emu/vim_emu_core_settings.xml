@@ -89,11 +89,6 @@
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ REPEAT</autogen>
-    </item>
-    <item>
-      <name></name>
       <identifier vk_config="true">notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 2</autogen>
     </item>
