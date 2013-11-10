@@ -9,17 +9,9 @@
     <name>VIM Emulation</name>
     <include path="vim_emu/vim_emu_core.xml">
       <replacementdef>
-        <replacementname>VIM_EMU_ONLY_APPS</replacementname>
-        <replacementvalue></replacementvalue>
-      </replacementdef>
-      <replacementdef>
-        <replacementname>VIM_EMU_IGNORE_APPS</replacementname>
-        <replacementvalue>TERMINAL, VI, CATHODE, PASSWORD, FIREFOX, EMACS</replacementvalue>
-      </replacementdef>
-      <replacementdef>
         <replacementname>VIM_EMU_FORCE_OFF_ALL_BUT_LINE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
+          <!--
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
@@ -28,6 +20,7 @@
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+          -->
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual{{VIM_EMU_ALTCONFIG}},
@@ -50,7 +43,7 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_OFF_ALL_MODE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
+          <!--
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
@@ -59,6 +52,7 @@
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+          -->
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual{{VIM_EMU_ALTCONFIG}},
@@ -82,7 +76,7 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_ON_NORMAL_MODE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
+          <!--
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
@@ -91,6 +85,7 @@
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+          -->
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual{{VIM_EMU_ALTCONFIG}},
@@ -115,7 +110,7 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_ON_NORMAL_WO_LINE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
+          <!--
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
@@ -124,6 +119,7 @@
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+          -->
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_visual{{VIM_EMU_ALTCONFIG}},
@@ -163,6 +159,7 @@
           notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
+          <!--
           notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}},
@@ -171,6 +168,7 @@
           notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}},
+          -->
         </replacementvalue>
       </replacementdef>
       <replacementdef>

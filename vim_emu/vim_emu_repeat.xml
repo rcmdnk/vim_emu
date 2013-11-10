@@ -2,102 +2,99 @@
 <root>
   <!--
   <block>
-    <config_only>notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}}</config_only>
-    <block>
-      <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_5{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_6{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
-    <block>
-      <config_only>notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
-        {{VIM_EMU_BEFORE_MOVE}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_AFTER_MOVE}}
-      </autogen>
-    </block>
+    <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_5{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_6{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
+  </block>
+  <block>
+    <config_only>notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</config_only>
+    <autogen>
+      __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
+      {{VIM_EMU_BEFORE_MOVE}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      {{VIM_EMU_REPEAT_OUTPUT}}, {{VIM_EMU_REPEAT_OUTPUT}},
+      KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+      {{VIM_EMU_AFTER_MOVE}}
+    </autogen>
   </block>
   -->
 
