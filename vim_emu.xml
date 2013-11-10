@@ -158,7 +158,6 @@
           notsave.vim_emu_S_R{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_complement{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          notsave.vim_emu_repeat{{VIM_EMU_ALTCONFIG}},
           <!--
           notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}},
           notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}},
