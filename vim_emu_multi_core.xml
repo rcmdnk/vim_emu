@@ -6,7 +6,6 @@
       <replacementdef>
         <replacementname>VIM_EMU_RESET_REPEAT</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4,
@@ -20,7 +19,6 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_OFF_ALL_BUT_LINE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4,
@@ -51,7 +49,6 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_OFF_ALL_MODE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4,
@@ -83,7 +80,6 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_ON_NORMAL_MODE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4,
@@ -116,7 +112,6 @@
       <replacementdef>
         <replacementname>VIM_EMU_FORCE_ON_NORMAL_WO_LINE</replacementname>
         <replacementvalue>
-          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_repeat,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_2,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_3,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_4,
