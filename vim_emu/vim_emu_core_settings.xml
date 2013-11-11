@@ -87,6 +87,7 @@
       <identifier vk_config="true">notsave.vim_emu_record{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ RECORD</autogen>
     </item>
+    <!--
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</identifier>
@@ -127,6 +128,7 @@
       <identifier vk_config="true">notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ 9</autogen>
     </item>
+    -->
   </item>
   <item>
     <name>Help</name>
