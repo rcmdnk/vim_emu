@@ -81,7 +81,7 @@ Following checkboxes will appear in your setting panel:
 * Reset vim_emu at non-vim_emu apps.
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
-* Reset vim_emu at Spotlight in any case.
+* Reset at Spotlight (Ctrl-Space or Ctrl-Option-Space)
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
