@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<root>
+  <item>
+    <name>Enable Vim Repeat</name>
+    <identifier>remap.vim_emu_repeat{{VIM_EMU_ALTCONFIG}}</identifier>
+    <only>{{VIM_EMU_ONLY_APPS}}</only>
+    <not>{{VIM_EMU_IGNORE_APPS}}</not>
+    <block>
+      <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_2{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_3, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_3{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_4, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_4{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_5, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_5{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_6, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_6{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_7, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_7{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_8, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_8{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::KEY_9, ModifierFlag::NONE,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+    </block>
+  </item>
+</root>
