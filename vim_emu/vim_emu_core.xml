@@ -549,16 +549,6 @@
       </autogen>
     </block> <!-- Complement Mode End -->
 
-    <block> <!-- Search Mode Begin -->
-      <config_only>notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen>
-        __KeyToKey__ KeyCode::RETURN, ModifierFlag::NONE,
-        KeyCode::RETURN,
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-      </autogen>
-    </block> <!-- Search End -->
-
     <!-- Enter G Mode Begin -->
     <block>
       <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
@@ -705,6 +695,8 @@
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::N, ModifierFlag::NONE,
+        KeyCode::F, VK_COMMAND,
+        KeyCode::G, VK_COMMAND,
         KeyCode::G, VK_COMMAND,
         KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
@@ -712,6 +704,8 @@
       <autogen>
         __KeyToKey__ KeyCode::N,
         VK_SHIFT|ModifierFlag::NONE,
+        KeyCode::F, VK_COMMAND,
+        KeyCode::G, VK_SHIFT|VK_COMMAND,
         KeyCode::G, VK_SHIFT|VK_COMMAND,
         KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
@@ -1186,6 +1180,29 @@
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block> <!-- Command Mode End -->
+
+    <block> <!-- Search Input Mode Begin -->
+      <config_only>notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</config_only>
+      <autogen>
+        __KeyToKey__ KeyCode::RETURN, ModifierFlag::NONE,
+        KeyCode::RETURN,
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+    </block> <!-- Search Input End -->
+
+    <block> <!-- Search Mode Begin -->
+      <config_only>notsave.vim_emu{{VIM_EMU_ALTCONFIG}}</config_only>
+      <config_only>notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</config_only>
+      <autogen>
+        __KeyToKey__ KeyCode::N, ModifierFlag::NONE,
+        KeyCode::G, VK_COMMAND,
+      </autogen>
+      <autogen>
+        __KeyToKey__ KeyCode::N,
+        VK_SHIFT|ModifierFlag::NONE,
+        KeyCode::G, VK_SHIFT|VK_COMMAND,
+      </autogen>
+    </block> <!-- Search Mode End -->
 
     <block> <!-- Replace One Mode Begin -->
       <config_only>notsave.vim_emu_R{{VIM_EMU_ALTCONFIG}}</config_only>
