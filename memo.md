@@ -93,3 +93,12 @@ All, only move in core_emu
  13661 20083 501250/2097152 (memory usage: 23% of 8192KB)
 
  visual x 2 (13000x2.5), 
+
+All
+551185/2097152 (memory usage: 26% of 8192KB)
+
+All
+551174/2097152 (memory usage: 26% of 8192KB)
+
+All reset + search reset
+557356/2097152 (memory usage: 26% of 8192KB)
