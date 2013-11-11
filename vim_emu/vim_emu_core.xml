@@ -43,7 +43,9 @@
         <autogen>
           __HoldingKeyToKey__ KeyCode::ESCAPE,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
@@ -116,7 +118,9 @@
         <autogen>
           __HoldingKeyToKey__ KeyCode::ESCAPE,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
@@ -157,7 +161,9 @@
           __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
           VK_CONTROL,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
@@ -233,7 +239,9 @@
           __HoldingKeyToKey__ KeyCode::BRACKET_LEFT,
           VK_CONTROL,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
         </autogen>
@@ -346,7 +354,9 @@
           __KeyToKey__ KeyCode::L,
           VK_CONTROL,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
       <block> <!-- Turn Off also IME if enabled -->
@@ -401,7 +411,9 @@
           KeyCode::COMMAND_L,
           KeyCode::COMMAND_L,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
       <block> <!-- Turn Off also IME if enabled -->
@@ -458,7 +470,9 @@
           KeyCode::COMMAND_R,
           KeyCode::COMMAND_R,
           KeyCode::ESCAPE,
-          {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
       <block> <!-- Turn Off also IME if enabled -->
@@ -540,7 +554,7 @@
       <autogen>
         __KeyToKey__ KeyCode::RETURN, ModifierFlag::NONE,
         KeyCode::RETURN,
-        {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
+        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
       </autogen>
     </block> <!-- Search End -->
@@ -558,9 +572,6 @@
 
     <block> <!-- Normal Mode Begin -->
       <config_only>notsave.vim_emu_normal{{VIM_EMU_ALTCONFIG}}</config_only>
-      <config_not>notsave.vim_emu_Y{{VIM_EMU_ALTCONFIG}}</config_not>
-      <config_not>notsave.vim_emu_D{{VIM_EMU_ALTCONFIG}}</config_not>
-      <config_not>notsave.vim_emu_C{{VIM_EMU_ALTCONFIG}}</config_not>
 
       <!-- Normal Mode: Cursor Move Begin -->
       <include path="vim_emu_move.xml"></include>
@@ -656,21 +667,23 @@
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::S, VK_COMMAND,
         KeyCode::W, VK_COMMAND,
-        {{VIM_EMU_FORCE_OFF_ALL_MODE}}
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
       </autogen>
       <autogen> <!-- Quit -->
         __KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA2|
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::W, VK_COMMAND,
-        {{VIM_EMU_FORCE_OFF_ALL_MODE}}
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
       </autogen>
       <autogen> <!-- Escape from EXTRA2 -->
         __KeyToKey__ KeyCode::ESCAPE, ModifierFlag::EXTRA2,
-        {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+        KeyCode::VK_LOCK_EXTRA2_FORCE_OFF
       </autogen>
       <autogen> <!-- Escape from EXTRA2 -->
         __KeyToKey__ KeyCode::BRACKET_LEFT, VK_CONTROL|ModifierFlag::EXTRA2,
-        {{VIM_EMU_FORCE_ON_NORMAL_MODE}}
+        KeyCode::VK_LOCK_EXTRA2_FORCE_OFF
       </autogen>
       <!-- Normal Mode: Save, Quit End -->
 
@@ -748,7 +761,6 @@
         KeyCode::A, VK_CONTROL|VK_SHIFT,
         KeyCode::E, VK_CONTROL|VK_SHIFT,
         KeyCode::C, VK_COMMAND,
-        {{VIM_EMU_FORCE_ON_NORMAL_MODE}},
         KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_Y{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
