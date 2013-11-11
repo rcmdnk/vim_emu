@@ -24,7 +24,7 @@
           __HoldingKeyToKey__ KeyCode::ESCAPE,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
@@ -99,7 +99,7 @@
           __HoldingKeyToKey__ KeyCode::ESCAPE,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
@@ -142,7 +142,7 @@
           VK_CONTROL,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
@@ -220,7 +220,7 @@
           VK_CONTROL,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_NONE,
           KeyCode::ESCAPE, Option::NOREPEAT
@@ -244,25 +244,23 @@
     <identifier>remap.vim_emu_jk_toggle{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>
-    <!-- __SimultaneousKeyPresses__ makes a problem
-         if same combination is defined in different config state.
-         If it is set as "Enter Normal Mode" in Insert Mode (no config)
-              and set as "Back in Insert Mode" in Normal Mode,
-         it shows repeat j/k when push j/k after entering Normal mode.
-         Therefore, for simultaneous keys,
-         only toggles are used only when Insert/Normal mode.
-         As two options have to be toggled,
-         it is not possible to support in such Viertual mode.
-         Hence, the combination set to do nothing in such Virtual mode.
-    -->
+    <appendix>__SimultaneousKeyPresses__ makes a problem </appendix>
+    <appendix>if same combination is defined in different config state.</appendix>
+    <appendix>If it is set as "Enter Normal Mode" in Insert Mode (no config)</appendix>
+    <appendix>     and set as "Back in Insert Mode" in Normal Mode,</appendix>
+    <appendix>it shows repeat j/k when push j/k after entering Normal mode.</appendix>
+    <appendix>Therefore, for simultaneous keys,</appendix>
+    <appendix>only toggles are used only when Insert/Normal mode.</appendix>
+    <appendix>As two options have to be toggled,</appendix>
+    <appendix>it is not possible to support in such Viertual mode.</appendix>
+    <appendix>Hence, the combination set to do nothing in such Virtual mode.</appendix>
     <block>
       <block>
         <config_not>{{VIM_EMU_NOT_NORMAL_MODE}}</config_not>
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::J, KeyCode::K,
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_MODE_TOGGLE}}
         </autogen>
       </block>
     </block>
@@ -279,8 +277,7 @@
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::Q, KeyCode::W,
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_MODE_TOGGLE}}
         </autogen>
       </block>
     </block>
@@ -297,8 +294,7 @@
         <autogen>
           __SimultaneousKeyPresses__
           KeyCode::S, KeyCode::D,
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_TOGGLE_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_MODE_TOGGLE}}
         </autogen>
       </block>
     </block>
@@ -335,7 +331,7 @@
           VK_CONTROL,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
@@ -392,7 +388,7 @@
           KeyCode::COMMAND_L,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>
@@ -451,7 +447,7 @@
           KeyCode::COMMAND_R,
           KeyCode::ESCAPE,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_ON}}
           KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </autogen>
       </block>

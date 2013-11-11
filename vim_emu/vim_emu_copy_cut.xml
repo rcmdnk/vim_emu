@@ -62,7 +62,7 @@
     {{VIM_EMU_BEFORE_COPY_CUT}},
     KeyCode::X, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
-    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+    {{VIM_EMU_EMU_OFF}}
     KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     {{VIM_EMU_LINECOPY}}
   </autogen>
@@ -73,7 +73,7 @@
     KeyCode::E, VK_CONTROL|VK_SHIFT,
     KeyCode::X, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
-    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+    {{VIM_EMU_EMU_OFF}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
   </autogen>
   <autogen> <!-- * -->

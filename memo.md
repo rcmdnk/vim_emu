@@ -100,5 +100,8 @@ All
 All
 551174/2097152 (memory usage: 26% of 8192KB)
 
-All reset + search reset
+All reset + search reset (~6000)
 557356/2097152 (memory usage: 26% of 8192KB)
+
+All using (~200)
+551334/2097152 (memory usage: 26% of 8192KB)
