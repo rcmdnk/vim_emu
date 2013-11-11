@@ -80,7 +80,7 @@
     <item>
       <name></name>
       <identifier vk_config="true">notsave.vim_emu_search{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ SEARCH</autogen>
+      <autogen>__ShowStatusMessage__ SEARCH --</autogen>
     </item>
     <item>
       <name></name>
