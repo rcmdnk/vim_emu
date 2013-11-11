@@ -72,15 +72,14 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Vim Emulation.
-* Enable Vim Visual Block Mode.
 * Enable Vim Recording Macro.
-* Enable Vim Repeat (Currently comented out).
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.
 * Reset vim_emu at non-vim_emu apps.
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
+* Reset at Spotlight (Ctrl-Space or Ctrl-Option-Space)
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
@@ -90,10 +89,6 @@ needs to be checked to leave such Virtual mode.
 
 ChangeKey 3 and 6 works only in modes other than Insert/Normal modes,
 therefore they are useful if you use ESC/Ctrl-[ as is in Insert/Normal modes.
-
-Visual Block uses the mouse cursor position instead of the cursor position
-as a start point,
-therefore it behaves different from other Visual modes.
 
 For Recording Macro, you need MadRuby (see below).
 
@@ -110,6 +105,17 @@ are also similar options, but it reset mode even on vim_emu apps.
 
 
 Note: You can enable all vim features, but it may make your key input/mouse move slow. Such Yank/Delete/Change Mode is especially heavy. (To do: make it light...)
+
+
+Currently some options are disabled because they have too much key mappings
+and it affects on the performance of Mac.
+
+If you want, try full_option branch.
+
+Currently, following options are available in addition to above:
+
+* Enable Vim Visual Block Mode.
+* Enable Vim Repeat (Currently comented out).
 
 ## Applications
 The default setting enables vim emulation on applications w/o Terminal (iTerm),
@@ -194,18 +200,6 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-u/Ctrl-d| Go Up/Down 10 line.|
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
-
-<strike>
-In addition, `Repeat` is also available for some commands.
-2-9 can be used as a repeat number.
-</strike>
-
-Currently `Repeaat` feature is commented out.
-
-|Example Commands|Action|
-|:----------:|:-------|
-|4j| Down 4 lines|
-|3w| Move 3 words forward|
 
 ### Yank/Cut(Delete)/Change/Paste
 |Key/Commands|Function|
