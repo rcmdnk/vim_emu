@@ -6,6 +6,7 @@
     KeyCode::C, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     {{VIM_EMU_LINECOPY}}
   </autogen>
   <autogen> <!-- Y -->
@@ -24,6 +25,7 @@
     KeyCode::X, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     {{VIM_EMU_LINECOPY}}
   </autogen>
   <autogen> <!-- D -->
@@ -42,6 +44,7 @@
     KeyCode::X, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     {{VIM_EMU_LINECOPY}}
   </autogen>
   <autogen> <!-- X -->
@@ -60,6 +63,7 @@
     KeyCode::X, VK_COMMAND,
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
     {{VIM_EMU_LINECOPY}}
   </autogen>
   <autogen> <!-- C -->
@@ -82,6 +86,7 @@
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
   </autogen>
   <autogen> <!-- * for JIS -->
     __KeyToKey__ KeyCode::JIS_COLON, {{VIM_EMU_ADDITIONAL_MODIFIER}}
@@ -93,6 +98,7 @@
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
   </autogen>
   <autogen> <!-- * for GERMAN -->
     __KeyToKey__ KeyCode::BRACKET_RIGHT, {{VIM_EMU_ADDITIONAL_MODIFIER}}
@@ -104,5 +110,6 @@
     {{VIM_EMU_AFTER_MOVE}}
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
     KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_search{{VIM_EMU_ALTCONFIG}},
+    KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
   </autogen>
 </root>
