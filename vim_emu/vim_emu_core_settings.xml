@@ -23,11 +23,6 @@
     </item>
     <item>
       <name></name>
-      <identifier vk_config="true">notsave.vim_emu_visual_block{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ VISUAL BLOCK --</autogen>
-    </item>
-    <item>
-      <name></name>
       <identifier vk_config="true">notsave.vim_emu_visual_line_first{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ VISUAL LINE --</autogen>
     </item>
@@ -91,48 +86,6 @@
       <identifier vk_config="true">notsave.vim_emu_record{{VIM_EMU_ALTCONFIG}}</identifier>
       <autogen>__ShowStatusMessage__ RECORD</autogen>
     </item>
-    <!--
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 2</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_3{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 3</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_4{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 4</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_5{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 5</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_6{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 6</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_7{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 7</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_8{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 8</autogen>
-    </item>
-    <item>
-      <name></name>
-      <identifier vk_config="true">notsave.vim_emu_9{{VIM_EMU_ALTCONFIG}}</identifier>
-      <autogen>__ShowStatusMessage__ 9</autogen>
-    </item>
-    -->
   </item>
   <item>
     <name>Help</name>
@@ -179,7 +132,7 @@
         <appendix>i/I/a/A/o/O: Enter Insert mode (OS standard state) at under the cursor/start of the</appendix>
         <appendix>line/next to the cursor/end of the line.</appendix>
         <appendix>
-          v/V/Ctrl-v: Enter Visual/Visual Line/Visual Block mode.
+          v/V: Enter Visual/Visual Line Mode
         </appendix>
         <appendix>
           :(colon) : Enter Command mode.
@@ -205,10 +158,6 @@
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>
         <appendix>Enter: Move to the first non-blanck character of the next line.</appendix>
         <appendix>gg/G: Go to top/bottom of the file.</appendix>
-        <appendix>In addition, "Repeat" is available for move commands.</appendix>
-        <appendix>e.g.) 4j: Down 4 lines. (only numbers of 2-9)</appendix>
-        <appendix>Repeat is enabled for visual modes, too.</appendix>
-
       </item>
       <item>
         <name>Yank/Cut/Change/Paste</name>
@@ -220,11 +169,6 @@
         <appendix>x/X: Cut a character under/before the cursor.</appendix>
         <appendix>s/S: Delete/Cut a character/a line under the cursor and enter Insert mode.</appendix>
         <appendix>p/P: Paste to the next/current place.</appendix>
-        <appendix></appendix>
-        <appendix>y/d/c+Move Command can be used. (now repeat is also available)</appendix>
-        <appendix>e.g.) yw -> copy next one word.</appendix>
-        <appendix>e.g.) d3w -> Delete next 3 words.</appendix>
-        <appendix> </appendix>
       </item>
       <item>
         <name>Others</name>
@@ -250,8 +194,6 @@
       <item>
         <name>Move</name>
         <appendix>Most of Move commands in Normal mode can be used.</appendix>
-        <appendix>For Visual Block mode, mouse key is used,</appendix>
-        <appendix>and it shows a bit different behavior.</appendix>
       </item>
       <item>
         <name>Yank/Cut/Change</name>
