@@ -73,14 +73,15 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Vim Emulation.
 * Enable Vim Visual Block Mode.
-* Enable Vim Recording Macro.
 * Enable Vim Repeat (Currently comented out).
+* Enable Vim Recording Macro.
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
 * Ctrl-[ to Escape in Noraml Mode.
 * Reset vim_emu at non-vim_emu apps.
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
+* Reset vim_emu at Spotlight in any case.
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
@@ -195,12 +196,8 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
-<strike>
 In addition, `Repeat` is also available for some commands.
 2-9 can be used as a repeat number.
-</strike>
-
-Currently `Repeaat` feature is commented out.
 
 |Example Commands|Action|
 |:----------:|:-------|

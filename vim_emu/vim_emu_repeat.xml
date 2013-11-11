@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <root>
-  <!--
   <block>
     <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen>
@@ -96,7 +95,6 @@
       {{VIM_EMU_AFTER_MOVE}}
     </autogen>
   </block>
-  -->
 
   <autogen>
     __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},

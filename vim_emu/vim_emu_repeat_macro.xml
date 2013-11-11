@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <root>
-  <!--
   <block>
     <config_only>notsave.vim_emu_2{{VIM_EMU_ALTCONFIG}}</config_only>
     <autogen>
@@ -89,7 +88,7 @@
       KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_9{{VIM_EMU_ALTCONFIG}},
     </autogen>
   </block>
-  -->
+
   <autogen>
     __KeyToKey__ {{VIM_EMU_REPEAT_INPUT}},
     KeyCode::KEY_8, VK_CONTROL|
