@@ -105,3 +105,6 @@ All reset + search reset (~6000)
 
 All using (~200)
 551334/2097152 (memory usage: 26% of 8192KB)
+
+All using, spotloght (~900)
+552110/2097152 (memory usage: 26% of 8192KB)
