@@ -130,3 +130,11 @@ updated replace
 
 moved M from move to core_emu
 545211/2097152 (memory usage: 25% of 8192KB)
+
+Test w/o ChangeKey 8-12 -> but it only affects on loading (not affect on performance if they are disabled.)
+544179/2097152 (memory usage: 25% of 8192KB)
+
+
+
+New version ()
+411619/2097152 (memory usage: 19% of 8192KB)

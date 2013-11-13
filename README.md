@@ -41,7 +41,7 @@ in `private.xml`, then please remove the line.
 You should have following line at the bottom of file instead:
     <include path="vim_emu.xml"></include>
 
-Note) You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
+Note: You need to install [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/index.html) before installing these files.
 
 ## Uninstall (for using vim_emu.git repository)
 Remove `vim_emu_test.xml`, `vim_emu.xml`, `vim_emu` directory in
@@ -110,7 +110,7 @@ Note: You can enable all vim features, but it may make your key input/mouse move
 Currently some options are disabled because they have too much key mappings
 and it affects on the performance of Mac.
 
-If you want, try full_option branch.
+If you want, try [full_option](https://github.com/rcmdnk/vim_emu/tree/multi_option) branch.
 
 Currently, following options are available in addition to above:
 
@@ -163,7 +163,7 @@ An initial state is `Insert Mode`, then `Esc` or `Ctrl-[` brings you to the norm
 
 In the normal mode, `i` is the key to be back to the insert mode.
 
-`v`, `V` and `Ctrl-v` are the key to the Character-wise, Line-wise, and Block-wise
+`v` and `V` are the key to the Character-wise and Line-wise
 visual mode, respectively.
 
 After push `:`, a few commands to save/quit are available.
@@ -186,7 +186,7 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Key/Commands|Function|
 |:----------:|:-------|
 |i/I/a/A/o/O| Enter the insert mode at under the cursor/start of the line/next to the cursor/end of the line/next line/previous line.|
-|v/V/Ctrl-v|Enter the visual mode of Character-wise/Line-wise/Block-wise.|
+|v/V|Enter the visual mode of Character-wise/Line-wise.|
 |:|Enter the command line mode|
 
 ### Move
@@ -202,7 +202,7 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
-Curretnly W/E/B/gE are disabled, as they are exactly same as w/e/b/ge.
+Note: Curretnly W/E/B/gE are disabled, as they are exactly same as w/e/b/ge.
 (for a speed up.)
 Ctrl-a/Ctrl-e are also disable.
 
@@ -222,7 +222,6 @@ If you want to enable them, remove comments from corresponding lines in vim_emu/
 
 y/d/c+Move Command can be used, too.
 * e.g.) `yw` -> copy next one word.
-* <!-- e.g.) `d3w` -> delete next 3 words. -->
 
 Currently `Repeaat` feature is commented out.
 
@@ -248,6 +247,10 @@ Currently `Repeaat` feature is commented out.
 |y/d/x/c| Copy/Cut/Cut/Cut and insert (`d`=`x`)|
 |Y/D/X/C| Move to the end of line, then Copy/Cut/Cut/Cut and insert (`D`=`X`)|
 |*| Search the selected word.|
+
+Note: Currently, if you paste lines copied in visual line mode,
+there will be one empty line below the content
+if the content doesn't include the last line of the text.
 
 ## Available commands at Command mode
 |Key/Commands|Function|
