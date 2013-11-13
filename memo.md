@@ -119,3 +119,7 @@ fixed dd, optimized ydc
 commit 489d4cf560f5827bb93d8264c6b60d43c74efef9
 removed C-a/C-e
 544716/2097152 (memory usage: 25% of 8192KB)
+
+commit f143a956b708a067bd724ac7c297b2ba57e59c1b
+added {}
+546746/2097152 (memory usage: 26% of 8192KB)

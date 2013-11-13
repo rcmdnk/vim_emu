@@ -57,6 +57,7 @@
   <autogen>__KeyToKey__ KeyCode::UK_SECTION, ModifierFlag::NONE,          {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::GERMAN_PC_LESS_THAN, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
   -->
+  <!--
   <autogen>__KeyToKey__ KeyCode::KEYPAD_0, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEYPAD_1, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEYPAD_2, ModifierFlag::NONE,        {{VIM_EMU_REPLACE}}</autogen>
@@ -74,6 +75,7 @@
   <autogen>__KeyToKey__ KeyCode::KEYPAD_MULTIPLY, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEYPAD_PLUS, ModifierFlag::NONE,     {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEYPAD_SLASH, ModifierFlag::NONE,    {{VIM_EMU_REPLACE}}</autogen>
+  -->
   <autogen>__KeyToKey__ KeyCode::KEY_0, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEY_1, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
   <autogen>__KeyToKey__ KeyCode::KEY_2, ModifierFlag::NONE, {{VIM_EMU_REPLACE}}</autogen>
