@@ -142,7 +142,7 @@
         <name>Move</name>
         <appendix>h/j/k/l: Left/Down/Up/Right.</appendix>
         <appendix>
-          0/$ (C-a/C-e): Move to the beginning/end of the line.
+          0/$ : Move to the beginning/end of the line.
         </appendix>
         <appendix>
           ^ : Move to the first non-blanck character of the line.
@@ -152,7 +152,8 @@
           (w: the beginning of the word, e: the end of the word).
         </appendix>
         <appendix>
-          b: Move to the previous word (b: the beginning of the word).
+          b/ge: Move to the previous word
+          (b: the beginning of the word, ge: the end of the word).
         </appendix>
         <appendix>Ctrl-u/Ctrl-d: Go Up/Down 10 lines.</appendix>
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>

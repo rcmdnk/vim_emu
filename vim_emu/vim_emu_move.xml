@@ -46,6 +46,7 @@
   </autogen>
 
   <!-- a/e same as 0/$ (don't disable) -->
+  <!--
   <autogen>
     __KeyToKey__ KeyCode::A,
     VK_CONTROL|ModifierFlag::NONE,
@@ -60,6 +61,7 @@
     KeyCode::E, {{VIM_EMU_USE_SHIFT}}VK_CONTROL,
     {{VIM_EMU_AFTER_MOVE}}
   </autogen>
+  -->
 
   <!-- ^ -->
   <autogen>
@@ -114,6 +116,7 @@
         </replacementvalue>
       </replacementdef>
     </include>
+    <!--
     <include path="vim_emu_repeat.xml">
       <replacementdef>
         <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -137,6 +140,7 @@
         </replacementvalue>
       </replacementdef>
     </include>
+    -->
   </block><!-- Command with g -->
 
   <!-- w/W/e/E/b/B -->
