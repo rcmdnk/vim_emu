@@ -196,13 +196,16 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |0/$| To the beginning/last of the line.|
 |Ctrl-a/Ctrl-e| To the beginning/last of the line (emacs like).|
 |w/W/e/E| Move a word forward (w/W: the beginning of the word, e/E: the end of the word).|
-|b/B| Move a word backward (b/B:  the beginning of the word).|
+|b/B, ge/gE| Move a word backward (b/B:  the beginning of the word, ge/gE: the end of the word).|
 |Ctrl-u/Ctrl-d| Go Up/Down 10 line.|
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
-Curretnly W/E/B are disabled, as they are exactly same as w/e/b.
+Curretnly W/E/B/gE are disabled, as they are exactly same as w/e/b/ge.
 (for a speed up.)
+Ctrl-a/Ctrl-e are also disable.
+
+If you want to enable them, remove comments from corresponding lines in vim_emu/vim_emu_move.xml
 
 ### Yank/Cut(Delete)/Change/Paste
 |Key/Commands|Function|

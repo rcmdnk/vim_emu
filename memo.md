@@ -108,3 +108,12 @@ All using (~200)
 
 All using, spotloght (~900)
 552110/2097152 (memory usage: 26% of 8192KB)
+
+
+
+
+commit 42950a17095dd558b19cfd45937bd644b00ed6b0
+548056/2097152 (memory usage: 26% of 8192KB)
+
+
+544716/2097152 (memory usage: 25% of 8192KB)
