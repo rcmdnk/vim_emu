@@ -52,15 +52,6 @@
       </replacementvalue>
     </replacementdef>
   </include>
-  <!-- M -->
-  <autogen>
-    __KeyToKey__
-    KeyCode::M, VK_SHIFT|ModifierFlag::NONE,
-    {{VIM_EMU_BEFORE_MOVE}},
-    KeyCode::PAGEDOWN, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
-    KeyCode::PAGEUP, {{VIM_EMU_USE_SHIFT}}|VK_OPTION,
-    {{VIM_EMU_AFTER_MOVE}}
-  </autogen>
   <!-- G -->
   <autogen>
     __KeyToKey__ KeyCode::G,
