@@ -80,10 +80,26 @@
         </replacementvalue>
       </replacementdef>
       <replacementdef>
+        <replacementname>VIM_EMU_NORMAL_ON</replacementname>
+        <replacementvalue>
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_using{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
         <replacementname>VIM_EMU_EMU_OFF</replacementname>
         <replacementvalue>
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_using{{VIM_EMU_ALTCONFIG}},
+        </replacementvalue>
+      </replacementdef>
+      <replacementdef>
+        <replacementname>VIM_EMU_NORMAL_OFF</replacementname>
+        <replacementvalue>
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_using{{VIM_EMU_ALTCONFIG}},
+          KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         </replacementvalue>
       </replacementdef>
       <replacementdef>

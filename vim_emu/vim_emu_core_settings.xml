@@ -148,11 +148,11 @@
           ^ : Move to the first non-blanck character of the line.
         </appendix>
         <appendix>
-          w/W/e/E: Move to the next word
-          (w/W: the beginning of the word, e/E: the end of the word).
+          w/e: Move to the next word
+          (w: the beginning of the word, e: the end of the word).
         </appendix>
         <appendix>
-          b/B: Move to the previous word (b/B: the beginning of the word).
+          b: Move to the previous word (b: the beginning of the word).
         </appendix>
         <appendix>Ctrl-u/Ctrl-d: Go Up/Down 10 lines.</appendix>
         <appendix>Ctrl-b/Ctrl-f: PageUp/PageDown.</appendix>

@@ -201,6 +201,9 @@ In Complement mode, use `Ctrl-n/p` to choose a candidate,
 |Ctrl-b/Ctrl-f| PageUp/PageDown.|
 |gg/G| Go to the top/bottom of the file|
 
+Curretnly W/E/B are disabled, as they are exactly same as w/e/b.
+(for a speed up.)
+
 ### Yank/Cut(Delete)/Change/Paste
 |Key/Commands|Function|
 |:----------:|:-------|
