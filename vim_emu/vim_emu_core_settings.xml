@@ -208,6 +208,10 @@
         <appendix>c: Change the selected region</appendix>
         <appendix>C: Change the selected region + to the end of the line</appendix>
         <appendix>*(asterisk): Search the selected word</appendix>
+        <appendix></appendix>
+        <appendix>Note: Currently, if you paste lines copied in visual line mode,</appendix>
+        <appendix>there will be one empty line below the content</appendix>
+        <appendix>if the content doesn't include the last line of the text.</appendix>
       </item>
     </item>
     <item>
