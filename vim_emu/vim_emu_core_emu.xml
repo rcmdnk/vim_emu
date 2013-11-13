@@ -71,6 +71,15 @@
       <include path="vim_emu_move.xml"></include>
       <!-- Normal Mode: Cursor Move End -->
 
+      <!-- Normal Mode: Cursor to Middle Begin -->
+      <autogen>
+        __KeyToKey__
+        KeyCode::M, VK_SHIFT|ModifierFlag::NONE,
+        KeyCode::PAGEDOWN, VK_OPTION,
+        KeyCode::PAGEUP, VK_OPTION,
+      </autogen>
+      <!-- Normal Mode: Cursor to Middle End -->
+
       <!-- Normal Mode: Enter INSERT Mode, i/I/a/A/o/O -->
       <autogen>
         __KeyToKey__ KeyCode::I, ModifierFlag::NONE,
