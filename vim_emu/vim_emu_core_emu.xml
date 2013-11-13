@@ -74,8 +74,7 @@
       <!-- Normal Mode: Enter INSERT Mode, i/I/a/A/o/O -->
       <autogen>
         __KeyToKey__ KeyCode::I, ModifierFlag::NONE,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::I,
@@ -83,35 +82,31 @@
         KeyCode::CURSOR_LEFT, VK_COMMAND,
         KeyCode::CURSOR_RIGHT, VK_OPTION,
         KeyCode::CURSOR_LEFT, VK_OPTION,
+        {{VIM_EMU_NORMAL_OFF}}
         {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::A, ModifierFlag::NONE,
         KeyCode::CURSOR_RIGHT,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::A,
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::CURSOR_RIGHT, VK_COMMAND,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::O, ModifierFlag::NONE,
         KeyCode::CURSOR_RIGHT, VK_COMMAND, KeyCode::RETURN,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::O,
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::CURSOR_UP, KeyCode::CURSOR_RIGHT, VK_COMMAND,
         KeyCode::RETURN,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <!-- Normal Mode: Enter INSERT Mode End -->
 
@@ -161,15 +156,13 @@
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::S, VK_COMMAND,
         KeyCode::W, VK_COMMAND,
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_EMU_OFF}}
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen> <!-- Quit -->
         __KeyToKey__ KeyCode::Q, ModifierFlag::EXTRA2|
         VK_SHIFT|ModifierFlag::NONE,
         KeyCode::W, VK_COMMAND,
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_EMU_OFF}}
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen> <!-- Escape from EXTRA2 -->
         __KeyToKey__ KeyCode::ESCAPE, ModifierFlag::EXTRA2,
@@ -259,11 +252,31 @@
         KeyCode::A, VK_CONTROL|VK_SHIFT,
         KeyCode::E, VK_CONTROL|VK_SHIFT,
         KeyCode::C, VK_COMMAND,
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_Y{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
       </autogen>
       <!-- Normal Mode: YANK Fix End -->
+
+      <!-- Normal Mode: Delete Fix Begin -->
+      <autogen> <!-- Fix C -->
+        __KeyToKey__ KeyCode::C,
+        VK_SHIFT|ModifierFlag::NONE,
+        KeyCode::E, VK_CONTROL|VK_SHIFT,
+        KeyCode::X, VK_COMMAND,
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <!-- Normal Mode: Delete Fix End -->
+
+      <!-- Normal Mode: Change Fix Begin -->
+      <autogen> <!-- Fix C -->
+        __KeyToKey__ KeyCode::C,
+        VK_SHIFT|ModifierFlag::NONE,
+        KeyCode::E, VK_CONTROL|VK_SHIFT,
+        KeyCode::X, VK_COMMAND,
+        {{VIM_EMU_NORMAL_OFF}}
+        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
+      </autogen>
+      <!-- Normal Mode: Change Fix End -->
 
       <!-- Normal Mode: Cut One Character Begin -->
       <autogen>
@@ -279,8 +292,7 @@
       <autogen>
         __KeyToKey__ KeyCode::S, ModifierFlag::NONE,
         KeyCode::FORWARD_DELETE,
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <autogen>
         __KeyToKey__ KeyCode::S,
@@ -289,8 +301,7 @@
         KeyCode::E, VK_CONTROL|VK_SHIFT,
         KeyCode::X, VK_COMMAND,
         KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
-        {{VIM_EMU_EMU_OFF}}
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+        {{VIM_EMU_NORMAL_OFF}}
       </autogen>
       <!-- Normal Mode: Cut One Character End -->
 
@@ -422,16 +433,6 @@
     <!-- DELETE Mode End -->
 
     <!-- CHANGE Mode Begin -->
-    <block>
-      <config_only>notsave.vim_emu_C{{VIM_EMU_ALTCONFIG}}</config_only>
-      <autogen> <!-- Fix cw -->
-        __KeyToKey__ KeyCode::W, ModifierFlag::NONE,
-        KeyCode::CURSOR_RIGHT, VK_SHIFT|VK_OPTION,
-        KeyCode::X, VK_COMMAND,
-        KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_C{{VIM_EMU_ALTCONFIG}},
-        KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
-      </autogen>
-    </block>
     <include path="vim_emu_ydc_mode.xml">
       <replacementdef>
         <replacementname>VIM_EMU_YDC_CHAR</replacementname>
@@ -442,7 +443,7 @@
         <replacementvalue>
           KeyCode::X, VK_COMMAND,
           KeyCode::VK_CONFIG_FORCE_OFF_notsave_vim_emu_C{{VIM_EMU_ALTCONFIG}},
-          KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_normal{{VIM_EMU_ALTCONFIG}},
+          {{VIM_EMU_EMU_OFF}}
         </replacementvalue>
       </replacementdef>
     </include>

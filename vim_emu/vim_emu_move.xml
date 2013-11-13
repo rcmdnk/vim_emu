@@ -154,6 +154,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  <!--
   <include path="vim_emu_repeat.xml">
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -170,6 +171,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  -->
   <include path="vim_emu_repeat.xml">
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -182,6 +184,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  <!--
   <include path="vim_emu_repeat.xml">
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -196,6 +199,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  -->
   <include path="vim_emu_repeat.xml">
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -208,6 +212,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  <!--
   <include path="vim_emu_repeat.xml">
     <replacementdef>
       <replacementname>VIM_EMU_REPEAT_INPUT</replacementname>
@@ -222,6 +227,7 @@
       </replacementvalue>
     </replacementdef>
   </include>
+  -->
 
   <!-- Return -->
   <!--
