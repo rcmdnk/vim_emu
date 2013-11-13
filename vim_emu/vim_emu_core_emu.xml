@@ -678,7 +678,7 @@
         </replacementdef>
       </include>
       <!-- Visual Line Mode: Move End -->
-    </block> <!-- Visual Line Mode -->
+    </block> <!-- Visual Line Mode End -->
 
     <block> <!-- Command Mode Begin -->
       <config_only>notsave.vim_emu_command{{VIM_EMU_ALTCONFIG}}</config_only>
