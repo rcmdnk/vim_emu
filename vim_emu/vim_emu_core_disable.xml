@@ -2,6 +2,7 @@
 <root>
   <item>
     <name>Disable all other non-assigned keys in other than Inser Mode</name>
+    <appendix>Note: Keys with modifiers are not disabled.</appendix>
     <identifier>remap.vim_emu_disable{{VIM_EMU_ALTCONFIG}}</identifier>
     <only>{{VIM_EMU_ONLY_APPS}}</only>
     <not>{{VIM_EMU_IGNORE_APPS}}</not>

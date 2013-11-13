@@ -142,7 +142,10 @@
         <name>Move</name>
         <appendix>h/j/k/l: Left/Down/Up/Right.</appendix>
         <appendix>
-          0/$ : Move to the beginning/end of the line.
+          0/$ : Move to the beginning/end of the line (Mac Cmd-left, Cmd-right).
+        </appendix>
+        <appendix>
+          {/} : Move to the beginning/end of the paragraph (Mac Ctrl-a, Ctrl-e. It works rather like "sentence". Sometime, it is actual sentence rather than 0/$).
         </appendix>
         <appendix>
           ^ : Move to the first non-blanck character of the line.
