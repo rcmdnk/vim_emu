@@ -127,3 +127,6 @@ added {}
 commit f143a956b708a067bd724ac7c297b2ba57e59c1b
 updated replace
 546355/2097152 (memory usage: 26% of 8192KB)
+
+moved M from move to core_emu
+545211/2097152 (memory usage: 25% of 8192KB)
