@@ -15,15 +15,6 @@
 
   <block> <!-- {{VIM_EMU_YDC_CHAR}} MODE -->
     <config_only>notsave.vim_emu_{{VIM_EMU_YDC_CHAR}}{{VIM_EMU_ALTCONFIG}}</config_only>
-    <autogen> <!-- {{VIM_EMU_YDC_CHAR}}{{VIM_EMU_YDC_CHAR}} -->
-      __KeyToKey__ KeyCode::{{VIM_EMU_YDC_CHAR}}, ModifierFlag::NONE,
-      {{VIM_EMU_BEFORE_MOVE}},
-      KeyCode::A, VK_CONTROL,
-      KeyCode::CURSOR_RIGHT, VK_COMMAND|VK_SHIFT,
-      {{VIM_EMU_AFTER_MOVE}},
-      KeyCode::VK_CONFIG_FORCE_ON_notsave_vim_emu_line_copy{{VIM_EMU_ALTCONFIG}},
-    </autogen>
-
     <include path="vim_emu_move.xml">
       <replacementdef>
         <replacementname>VIM_EMU_USE_SHIFT</replacementname>
