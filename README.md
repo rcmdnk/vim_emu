@@ -12,6 +12,14 @@ please update KeyRemap4MacBook or install files directly as below.
 If you are up-to-date at stable release but it is before 8.3.7,
 please try to check Beta version: follow [this instruction](https://github.com/tekezo/Files/blob/master/KeyRemap4MacBook/image/upgrade-to-the-latest-beta-version.png).
 
+Update: 2013/07/14
+New version which includes several ChangeKeys, Macro, etc...
+is available from 8.90.19.
+
+Note: currenlty, Repeat (e.g. 3w, y3d) and Visual Block are commented out.
+
+
+
 ### Install the latest vim_emu
 There could be some updates not included in KeyRemap4MacBook, yet.
 If you want to try the latest version, do:
