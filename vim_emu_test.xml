@@ -5,6 +5,7 @@
     <equal>com.logmein.logmeinpluginhost</equal>
   </appdef>
 
+  <include path="vim_emu/vim_emu_replacementdef.xml"></include>
   <include path="vim_emu.xml">
     <replacementdef>
       <replacementname>VIM_EMU_ALTCONFIG</replacementname>
