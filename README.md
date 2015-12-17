@@ -89,6 +89,7 @@ Following checkboxes will appear in your setting panel:
 * Reset vim_emu at left click in any case.
 * Reset vim_emu at Cmd-Tab in any case.
 * Reset at Spotlight (Ctrl-Space or Ctrl-Option-Space)
+* Additional settings of Control + X at insert mode.
 
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
@@ -189,6 +190,21 @@ are enabled.
 
 In Complement mode, use `Ctrl-n/p` to choose a candidate,
 `Ctrl-h` to skip, and `ESC/Ctrl-[` to choose a candidate.
+
+When you enable **Additional settings of Control + X at insert mode**,
+following commands are also available:
+
+|Key/Commands|Function|
+|:----------:|:-------|
+|Ctrl-c| Enter Normal mode.|
+|Ctrl-i| Insert Tab.|
+|Ctrl-j| Return.|
+|Ctrl-m| Return.|
+|Ctrl-t| Insert tab at the beginning of current line.|
+|Ctrl-u| Cut the text between the beginning of the line and the current position.|
+|Ctrl-w| Cut the word before the cursor.|
+
+Note: Some Control-X shortcut keys emacs like movements are originally available in OS X (see [Mac keyboard shortcuts - Apple Support](https://support.apple.com/en-ap/HT201236)).
 
 ## Available commands at Normal mode
 ### Mode Change
