@@ -81,6 +81,7 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
 * Enable Vim Emulation.
+* Enable Vim like complement.
 * Enable Vim Recording Macro.
 * Disable all non-assigned keys in other than Insert Mode.
 * Ctrl-[ to Escape for non-vim_emu apps.
@@ -186,7 +187,7 @@ are enabled.
 |:----------:|:-------|
 |ESC/Ctrl-[| Enter Normal mode. Holding these keys emulate normal ESC. In addition, toggle option is available.|
 |Simultaneous jk/qw/sd, Ctrl-l, Left-Cmd, Right-Cmd| Can be used for toggling Normal-Insert Modes.|
-|Ctrl-n/p| Enter Complement mode|
+|Ctrl-n/p| Enter Complement mode, if "Enable Vim like complement" is checked.|
 
 In Complement mode, use `Ctrl-n/p` to choose a candidate,
 `Ctrl-h` to skip, and `ESC/Ctrl-[` to choose a candidate.
