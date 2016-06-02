@@ -160,6 +160,9 @@
           ^ : Move to the first non-blanck character of the line.
         </appendix>
         <appendix>
+          +/- : Move to the next/previous line's first character.
+        </appendix>
+        <appendix>
           w/e: Move to the next word
           (w: the beginning of the word, e: the end of the word).
         </appendix>

@@ -220,6 +220,8 @@ Note: Some Control-X shortcut keys emacs like movements are originally available
 |:----------:|:-------|
 |h/j/k/l|Left/Down/Up/Right.|
 |0/$| Move to the beginning/last of the line (Mac Cmd-left, Cmd-right).|
+|^| Move to the first character of the line.|
+|+/-| Move to the next/previous line's first character.|
 |{/}| Move to the beginning/end of the paragraph (Mac Ctrl-a, Ctrl-e. It works rather like "sentence". Sometime, it is actual sentence rather than 0/$).|
 |Ctrl-a/Ctrl-e| To the beginning/last of the line (emacs like).|
 |w/W/e/E| Move a word forward (w/W: the beginning of the word, e/E: the end of the word).|
