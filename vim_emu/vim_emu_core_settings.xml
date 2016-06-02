@@ -200,6 +200,12 @@
         <appendix>ZZ: Save and Quit.</appendix>
         <appendix>ZQ: Quit.</appendix>
       </item>
+      <item>
+        <name>Non text edit commands</name>
+        <appendix>zi: Zoom in.</appendix>
+        <appendix>zo: Zoom out.</appendix>
+        <appendix>z0: Zoom reset.</appendix>
+      </item>
     </item>
     <item>
       <name>Visual Mode</name>

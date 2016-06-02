@@ -266,6 +266,10 @@ Currently `Repeaat` feature is commented out.
 |*| Search the word under the cursor.|
 |ZZ/ZQ|Save and Quit/Quit.|
 
+### Non text edit commands
+|zi|Zoom in.|
+|zo|Zoom out.|
+|z0|Zoom reset.|
 
 ## Available commands at Visual mode
 |Key/Commands|Function|
