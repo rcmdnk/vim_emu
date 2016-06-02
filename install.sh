@@ -1,6 +1,6 @@
 #!/bin/bash
 files=(vim_emu_test.xml vim_emu.xml vim_emu)
-instdir="$HOME/Library/Application Support/KeyRemap4MacBook"
+instdir="$HOME/Library/Application Support/Karabiner"
 
 backup="bak"
 overwrite=1
@@ -34,7 +34,7 @@ while getopts b:ndlh OPT;do
 done
 
 echo "**********************************************************"
-echo "Install VIM Emulation setting files for KeyRemap4Macbook"
+echo "Install VIM Emulation setting files for Karabiner"
 echo "**********************************************************"
 echo
 if [ $dryrun -ne 0 ];then
