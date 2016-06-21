@@ -80,6 +80,8 @@ Following checkboxes will appear in your setting panel:
 * ChangeKey10: Ctlr-l toggles Normal-Insert Mode.
 * ChangeKey11: Tap Left Cmd toggles Normal-Insert Mode.
 * ChangeKey12: Tap Right Cmd toggles Normal-Insert Mode.
+* ChangeKey13: Use customize key to enter Normal Mode. Key is defined by `VIM_EMU_CUSTOMIZE_KEY`.
+* ChangeKey14: Use customize toggle keys to enter Normal Mode. Key is defined by `VIM_EMU_CUSTOMIZE_SIMULTANEOUS_KEY`.
 * Enable Vim Emulation.
 * Enable Vim like complement.
 * Enable Vim Recording Macro.
@@ -95,11 +97,28 @@ Following checkboxes will appear in your setting panel:
 Enable `Enable Vim Emulation` and at least one of ChangeKeys.
 
 For simultaneous jk/qw/sd, it works only in Insert/Normal modes.
-Therefore, at least one of ChangeKey 1, 3, 4, 6, 10-12
+Therefore, at least one of ChangeKey 1, 3, 4, 6, 10-14
 needs to be checked to leave such Virtual mode.
 
 ChangeKey 3 and 6 works only in modes other than Insert/Normal modes,
 therefore they are useful if you use ESC/Ctrl-[ as is in Insert/Normal modes.
+
+For ChangeKey13, you can set a key as you like in your private.xml, like:
+
+    <replacementdef>
+      <replacementname>VIM_EMU_CUSTOMIZE_KEY</replacementname>
+      <replacementvalue>KeyCode::RETURN</replacementvalue>
+    </replacementdef>
+
+This setting makes `RETURN` key to enter normal mode.
+Under this setting, you can use `RETURN` by holding `RETURN` key.
+
+For ChangeKey14, you can set a key to toggle Normal-Insert as you like in your private.xml, like:
+
+    <replacementdef>
+      <replacementname>VIM_EMU_CUSTOMIZE_SIMULTANEOUS_KEY</replacementname>
+      <replacementvalue>KeyCode::O, KeyCode::P</replacementvalue>
+    </replacementdef>
 
 For Recording Macro, you need MadRuby (see below).
 
