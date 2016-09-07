@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+if [[ ! "$OSTYPE" =~ darwin ]];then
+  echo Can be used only in Mac.
+  exit 1
+fi
+
 files=(vim_emu_test.xml vim_emu.xml vim_emu)
 instdir="$HOME/Library/Application Support/Karabiner"
 
@@ -8,7 +14,7 @@ makelink=0
 dryrun=0
 newlink=()
 exist=()
-curdir=`pwd -P`
+curdir=$(pwd -P)darwin
 # help
 HELP="Usage: $0 [-ndl] [-b <backup file postfix>]
 
