@@ -35,7 +35,7 @@ while getopts b:ndlh OPT;do
     "d" ) dryrun=1 ;;
     "l" ) makelink=1 ;;
     "h" ) echo "$HELP" 1>&2; exit ;;
-    * ) echo "$HELP" 1>&2; exit ;;
+    * ) echo "$HELP" 1>&2; exit 1;;
   esac
 done
 
