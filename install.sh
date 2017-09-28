@@ -8,7 +8,7 @@ fi
 files=(vim_emu_test.xml vim_emu.xml vim_emu)
 instdir="$HOME/Library/Application Support/Karabiner"
 
-backup="bak"
+backup=""
 overwrite=1
 makelink=0
 dryrun=0
@@ -21,8 +21,7 @@ HELP="Usage: $0 [-ndl] [-b <backup file postfix>]
 Make copies/links of Mac related files/directories
 
 Arguments:
-      -b  Set backup postfix (default: make *.bak file)
-          Set \"\" if backups are not necessary
+      -b  Set backup postfix, like \"bak\" (default: \"\": no back up is made)
       -n  Don't overwrite if file is already exist
       -d  Dry run, don't install anything
       -l  Make link instead of copies
@@ -50,13 +49,13 @@ i=0
 while [ $i -lt ${#files[@]} ];do
   f=${files[$i]}
   d=$instdir
-  i=$(($i+1))
-  echo install $f to \"$d\"
+  i=$((i+1))
+  echo "install $f to $d"
   install=1
   if [ $dryrun -eq 1 ];then
     install=0
   fi
-  if [ "`ls "$d/$f" 2>/dev/null`" != "" ];then
+  if [ "$(ls "$d/$f" 2>/dev/null)" != "" ];then
     exist=(${exist[@]} "$f")
     if [ $dryrun -eq 1 ];then
       echo -n ""
@@ -66,7 +65,7 @@ while [ $i -lt ${#files[@]} ];do
       rm -rf "$d/${f}.$backup"
       mv "$d/$f" "$d/${f}.$backup"
     else
-      rm -rf "$d/$f"
+      rm -rf "${d:?}/${f}"
     fi
   else
     newlink=(${newlink[@]} "$f")
@@ -81,11 +80,11 @@ while [ $i -lt ${#files[@]} ];do
 done
 if [ $dryrun -eq 0 ];then
   if ! grep -q vim_emu_test.xml "$instdir/private.xml";then
-    sed -i .$backup 's/<\/root>/  <include path="vim_emu_test.xml"><\/include>\
+    sed -i ."$backup" 's/<\/root>/  <include path="vim_emu_test.xml"><\/include>\
 <\/root>/' "$instdir/private.xml"
     echo -n "$instdir/private.xml was updated"
     if [ "$backup" = "" ];then
-      rm -f $instdir/private.xml.
+      rm -f "$instdir/private.xml"
       echo "."
     else
       echo ", a backup (private.xml.$backup) was made."
@@ -98,7 +97,7 @@ if [ $dryrun -eq 1 ];then
 else
   echo "Following files were newly installed:"
 fi
-echo "  ${newlink[@]}"
+echo "  ${newlink[*]}"
 echo
 echo -n "Following files existed"
 if [ $dryrun -eq 1 ];then
@@ -117,5 +116,5 @@ else
     echo ":"
   fi
 fi
-echo "  ${exist[@]}"
+echo "  ${exist[*]}"
 echo
