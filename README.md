@@ -4,6 +4,8 @@ vim_emu
 Setting files of 
 [Karabiner](https://pqrs.org/osx/karabiner/)(KeyRemap4MacBook) for VIM Emulation.
 
+Note: for users since macOS Sierra, use [Karabiner-Element](https://pqrs.org/osx/karabiner/) + [rcmdnk/KE-complex_modifications](https://github.com/rcmdnk/KE-complex_modifications) (Import Vim Emulation from [Karabiner-Elements complex_modifications rules by rcmdnk](https://rcmdnk.com/KE-complex_modifications/).)
+
 ## Installation
 
 ### Stable version is available in KeyRemap4MacBook as default (from 8.3.7)
